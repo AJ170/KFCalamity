@@ -1,0 +1,613 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1545827802730460}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1545827802730460
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4634686993717854}
+  - 114: {fileID: 114924776490648835}
+  - 82: {fileID: 82224739259430658}
+  m_Layer: 0
+  m_Name: ScrakeImpaleAbility
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4634686993717854
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545827802730460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.995964, y: 4.9287195, z: -9.402081}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4669428288334666}
+  - {fileID: 4201800735737502}
+  - {fileID: 4142311131486066}
+  - {fileID: 4050103179689480}
+  - {fileID: 4272340550575548}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114924776490648835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545827802730460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cd9a76c3c6627575145bf25bfbbef5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: ScrakeImpale
+  Description:
+  Type: 1
+  Image:
+  ChargeUp: 0
+  WindDown: 1.5
+  Cooldown: 5
+  MoveAndUse: 4
+  CancelReload: 1
+  UseCharges: 0
+  MaxCharges: 1
+  StartCharges: 1
+  UseRandomCooldown: 0
+  MinCooldown: 1
+  MaxCooldown: 1
+  CanDud: 0
+  DudChance: 0.1
+  DudMinCooldown: 1
+  DudMaxCooldown: 1
+  CanBeCast: 0
+--- !u!82 &82224739259430658
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545827802730460}
+  m_Enabled: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 60
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: -2.7249703
+      outSlope: -2.7249703
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0.23142858
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1945854055644794
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4669428288334666}
+  - 114: {fileID: 114540931534378978}
+  - 114: {fileID: 114000350731374495}
+  m_Layer: 0
+  m_Name: OnKill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4669428288334666
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945854055644794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4634686993717854}
+  m_RootOrder: 0
+--- !u!114 &114540931534378978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945854055644794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb007fad7f60e676985675f7e69e345, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 16
+  customEventListeners: []
+  TriggerCategory: 2
+  PlayerTrigger: 2
+  ZedTrigger: 1
+  CustomTrigger: Impale
+  Type: 2
+  Duration: 0
+  Value: 0
+--- !u!114 &114000350731374495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945854055644794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d00993dd57031eaf75b2ed83b3a3f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 16
+  customEventListeners: []
+  Audio: {fileID: 82224739259430658}
+  Clip: {fileID: 8300000, guid: fb21f99ca52784d40b0664c9e3339723, type: 3}
+  Volume: 0.3
+  LetTimeAffectPitch: 1
+  Loop: 0
+--- !u!1 &1424351016433289
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4201800735737502}
+  - 114: {fileID: 114404015603393555}
+  - 114: {fileID: 114446189824451344}
+  - 114: {fileID: 114230950299416729}
+  m_Layer: 0
+  m_Name: OnTimerEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4201800735737502
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424351016433289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4634686993717854}
+  m_RootOrder: 1
+--- !u!114 &114404015603393555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424351016433289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d00993dd57031eaf75b2ed83b3a3f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 11
+  customEventListeners:
+  - Start
+  Audio: {fileID: 82224739259430658}
+  Clip: {fileID: 8300000, guid: 67340724b431470419ecbc1e29e164a4, type: 3}
+  Volume: 0.3
+  LetTimeAffectPitch: 1
+  Loop: 0
+--- !u!114 &114446189824451344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424351016433289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d00993dd57031eaf75b2ed83b3a3f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 11
+  customEventListeners:
+  - ImpaleEnd
+  Audio: {fileID: 82224739259430658}
+  Clip: {fileID: 8300000, guid: fb21f99ca52784d40b0664c9e3339723, type: 3}
+  Volume: 0.3
+  LetTimeAffectPitch: 1
+  Loop: 0
+--- !u!114 &114230950299416729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424351016433289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 638a0ff5d296486ee4ec5c285f49eb0b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 11
+  customEventListeners:
+  - CollisionDelay
+  MountObject: {fileID: 4050103179689480}
+  MountBone: 3
+  Offset: {x: 0, y: 0, z: 0}
+  Duration: 0.18
+--- !u!1 &1732153246538704
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4142311131486066}
+  - 114: {fileID: 114668062326157086}
+  - 114: {fileID: 114932997498649266}
+  - 114: {fileID: 114422223220746129}
+  - 114: {fileID: 114003364112979084}
+  m_Layer: 0
+  m_Name: OnCast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4142311131486066
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732153246538704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4634686993717854}
+  m_RootOrder: 2
+--- !u!114 &114668062326157086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732153246538704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb007fad7f60e676985675f7e69e345, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  TriggerCategory: 1
+  PlayerTrigger: 2
+  ZedTrigger: 3
+  CustomTrigger:
+  Type: 0
+  Duration: 0
+  Value: 1
+--- !u!114 &114932997498649266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732153246538704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af0d684721e9da75900d47a31f4e6a0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Name: Start
+  Interval: 0.1
+  Repeats: 1
+--- !u!114 &114422223220746129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732153246538704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5d00de80a2399e2da455c79c7651a5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Target: 3
+  Event: 3
+--- !u!114 &114003364112979084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732153246538704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af0d684721e9da75900d47a31f4e6a0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Name: CollisionDelay
+  Interval: 0.47
+  Repeats: 1
+--- !u!1 &1989145688826007
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4050103179689480}
+  - 65: {fileID: 65346694401156450}
+  - 114: {fileID: 114751361867500191}
+  m_Layer: 26
+  m_Name: ImpaleCollision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4050103179689480
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989145688826007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4634686993717854}
+  m_RootOrder: 3
+--- !u!65 &65346694401156450
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989145688826007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Size: {x: 2.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.7, y: 0, z: 0}
+--- !u!114 &114751361867500191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989145688826007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee582c7d8172bf53db8e54b303304ae, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  EffectSystem: {fileID: 114924776490648835}
+  Name: Impale
+  TriggerOnce: 1
+--- !u!1 &1137944692620062
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4272340550575548}
+  - 114: {fileID: 114653234462772881}
+  - 114: {fileID: 114041370806159271}
+  - 114: {fileID: 114517660120107407}
+  - 114: {fileID: 114067069027165970}
+  - 114: {fileID: 114392654160167805}
+  - 114: {fileID: 114844070580697422}
+  - 114: {fileID: 114497563369459931}
+  m_Layer: 0
+  m_Name: OnHit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4272340550575548
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4634686993717854}
+  m_RootOrder: 4
+--- !u!114 &114653234462772881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb54dcdf3ae628254ab6d653a5287f5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners: []
+  Target: 2
+  ComponentName: ImpaleTargetEffect
+  MountTarget: 3
+  Offset: {x: -0.4, y: -1.4, z: -0.5}
+  Duration: 2.5
+  BloodPrefab: {fileID: 1845703466158021, guid: 2da5d924df993954aab4b830392b4c80, type: 2}
+  PainSounds:
+  - {fileID: 8300000, guid: ba4a31a6c7f179543b976d2af2088b7c, type: 3}
+  - {fileID: 8300000, guid: ec662cb9f53d9934d98c6f2651bab6fe, type: 3}
+  - {fileID: 8300000, guid: 2c0ebf09b791fe044b01100bffcd1681, type: 3}
+  Volume: 0.3
+--- !u!114 &114041370806159271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb007fad7f60e676985675f7e69e345, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners: []
+  TriggerCategory: 2
+  PlayerTrigger: 2
+  ZedTrigger: 1
+  CustomTrigger: Impale
+  Type: 1
+  Duration: 2.3
+  Value: 1
+--- !u!114 &114517660120107407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5d00de80a2399e2da455c79c7651a5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners: []
+  Target: 0
+  Event: 3
+--- !u!114 &114067069027165970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d00993dd57031eaf75b2ed83b3a3f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners: []
+  Audio: {fileID: 82224739259430658}
+  Clip: {fileID: 8300000, guid: 24ad4a1750b1f6f448a34e34f49d6277, type: 3}
+  Volume: 0.3
+  LetTimeAffectPitch: 1
+  Loop: 1
+--- !u!114 &114392654160167805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af0d684721e9da75900d47a31f4e6a0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners: []
+  Name: ImpaleEnd
+  Interval: 2.5
+  Repeats: 1
+--- !u!114 &114844070580697422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28089a61ff3e8c818b14ef643bf74848, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners: []
+  Audio: {fileID: 0}
+  Clips:
+  - {fileID: 8300000, guid: 14c82cfc5d59cfb45afdf740ec293e36, type: 3}
+  - {fileID: 8300000, guid: 6de2dc947e058a14494af283d327b107, type: 3}
+  - {fileID: 8300000, guid: d8f5d7eec124cc140a00c29aa1251161, type: 3}
+  Volume: 0.8
+  LetTimeAffectPitch: 1
+  OverridePlayingAudio: 1
+--- !u!114 &114497563369459931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137944692620062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f3edc7e34f1458c90976931cc7b998, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners: []
+  Intensity: 0.15
+  DecayType: 0
+  Decay: 0
+  UseDuration: 1
+  Duration: 2.5
+  StopWhenDestroyed: 1
+  StopOnKill: 1
+  UseDelay: 0
+  Delay: 0

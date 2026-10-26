@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1568273262387449}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1568273262387449
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4521984208542893}
+  - 114: {fileID: 114401590212189855}
+  m_Layer: 0
+  m_Name: Hud Dynamic Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4521984208542893
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568273262387449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114401590212189855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568273262387449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: efbc25a42dfecac4dbfa1139e81803a7, type: 2}
+  sprites:
+  - name: hud_grenade_syringe_bg_cd
+    outer:
+      serializedVersion: 2
+      x: 65
+      y: 80
+      width: 39
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 65
+      y: 80
+      width: 39
+      height: 39
+    rotated: 0
+    paddingLeft: 0.33333334
+    paddingRight: 0.30769232
+    paddingTop: 0.33333334
+    paddingBottom: 0.30769232
+  - name: hud_ability_ready
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 55
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 55
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_bg_damaged
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 120
+      width: 323
+      height: 136
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 120
+      width: 323
+      height: 136
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_ability_used
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 12
+      width: 42
+      height: 42
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 12
+      width: 42
+      height: 42
+    rotated: 0
+    paddingLeft: 0.26190478
+    paddingRight: 0.26190478
+    paddingTop: 0.26190478
+    paddingBottom: 0.26190478
+  - name: weapons_switch_feedback
+    outer:
+      serializedVersion: 2
+      x: 324
+      y: 128
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 324
+      y: 128
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

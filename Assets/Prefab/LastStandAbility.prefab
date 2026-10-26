@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1466249127736723}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1466249127736723
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4565848771994268}
+  - 114: {fileID: 114920671191197454}
+  m_Layer: 0
+  m_Name: LastStandAbility
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4565848771994268
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466249127736723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1999174, y: 2.2051795, z: 53.391922}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4540111629394326}
+  - {fileID: 4368052424020468}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114920671191197454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466249127736723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042ea5fd425938425f095cadb5cce6ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: LastStand
+  Description:
+  Type: 1
+  Image: ability_last_stand
+  ChargeUp: 0
+  WindDown: 0
+  Cooldown: 60
+  MoveAndUse: 0
+  CancelReload: 1
+  UseCharges: 0
+  MaxCharges: 1
+  StartCharges: 1
+--- !u!1 &1043572899917767
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4540111629394326}
+  - 114: {fileID: 114243290510352810}
+  - 114: {fileID: 114186350647522664}
+  m_Layer: 0
+  m_Name: OnCast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4540111629394326
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1043572899917767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4565848771994268}
+  m_RootOrder: 0
+--- !u!114 &114243290510352810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1043572899917767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b95441bbf09895c36f3b13809141ee8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Name:
+  Radius: 50
+  Layer:
+    serializedVersion: 2
+    m_Bits: 2097408
+  HitLayer:
+    serializedVersion: 2
+    m_Bits: 2097408
+  CanHitSource: 1
+  CanAffectFriendly: 1
+--- !u!114 &114186350647522664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1043572899917767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d00993dd57031eaf75b2ed83b3a3f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Audio: {fileID: 0}
+  Clip: {fileID: 8300000, guid: 6808449fc33102f4b8d6bef7f244df18, type: 3}
+  Volume: 0.4
+  LetTimeAffectPitch: 1
+  Loop: 0
+--- !u!1 &1928432647025794
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4368052424020468}
+  - 114: {fileID: 114811041031518669}
+  m_Layer: 0
+  m_Name: OnAffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4368052424020468
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928432647025794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4565848771994268}
+  m_RootOrder: 1
+--- !u!114 &114811041031518669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928432647025794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2e02b5b3cc2dff5da04d917633c2ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 36
+  customEventListeners: []
+  Target: 2
+  ComponentName: LastStandEffect

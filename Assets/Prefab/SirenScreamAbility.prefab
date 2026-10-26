@@ -1,0 +1,668 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1066601179445933}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1066601179445933
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4148247687008899}
+  - 114: {fileID: 114346947295325123}
+  - 82: {fileID: 82514012999629871}
+  m_Layer: 0
+  m_Name: SirenScreamAbility
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4148247687008899
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066601179445933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.4001384, y: 4.7144055, z: 8.381894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4048536860317463}
+  - {fileID: 4354532875154359}
+  - {fileID: 4904646993792120}
+  - {fileID: 4561516098881650}
+  - {fileID: 4270404411743765}
+  - {fileID: 4448321416700790}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114346947295325123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066601179445933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cd9a76c3c6627575145bf25bfbbef5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: SirenScreamAbility
+  Description:
+  Type: 1
+  Image:
+  ChargeUp: 1.8
+  WindDown: 3
+  Cooldown: 7
+  MoveAndUse: 0
+  CancelReload: 1
+  UseCharges: 0
+  MaxCharges: 1
+  StartCharges: 1
+  UseRandomCooldown: 0
+  MinCooldown: 1
+  MaxCooldown: 1
+  CanDud: 0
+  DudChance: 0.1
+  DudMinCooldown: 1
+  DudMaxCooldown: 1
+  CanBeCast: 1
+--- !u!82 &82514012999629871
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066601179445933}
+  m_Enabled: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 80
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: -2.3568442
+      outSlope: -2.3568442
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0.11527377
+      value: 1
+      inSlope: -0.030918399
+      outSlope: -0.030918399
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1217134557128051
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4048536860317463}
+  - 114: {fileID: 114479108023451034}
+  - 114: {fileID: 114853981045617624}
+  - 114: {fileID: 114250150338894315}
+  m_Layer: 0
+  m_Name: OnHit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4048536860317463
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217134557128051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148247687008899}
+  m_RootOrder: 0
+--- !u!114 &114479108023451034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217134557128051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2e02b5b3cc2dff5da04d917633c2ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners:
+  - Scream
+  Target: 2
+  ComponentName: MigraneEffect
+--- !u!114 &114853981045617624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217134557128051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7edbaf810155a84ef63eeb7694ddf8e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners:
+  - Scream
+  Damage: 10
+  Type: 5
+  IgnoreArmor: 1
+  UseHeadshotDamage: 0
+  HeadshotDamage: 10
+--- !u!114 &114250150338894315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217134557128051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a8895712c3cefd2f65f7dce5d6430d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 4
+  customEventListeners:
+  - ForceField
+  AbilityName: SirenScream
+  TriggerRemote: 1
+--- !u!1 &1996163071455627
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4354532875154359}
+  - 114: {fileID: 114720889768213631}
+  - 114: {fileID: 114151410188611846}
+  m_Layer: 0
+  m_Name: OnChargeUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4354532875154359
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996163071455627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148247687008899}
+  m_RootOrder: 1
+--- !u!114 &114720889768213631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996163071455627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb007fad7f60e676985675f7e69e345, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 3
+  customEventListeners: []
+  TriggerCategory: 1
+  PlayerTrigger: 2
+  ZedTrigger: 3
+  CustomTrigger:
+  Type: 0
+  Duration: 0.2
+  Value: 1
+--- !u!114 &114151410188611846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996163071455627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63df3315bc07c122c1dd3b9b85033d26, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 3
+  customEventListeners: []
+  ParticleName: FxSirenCharging
+  Parent: 1
+  Rotation: {x: 0, y: 0, z: 0}
+  Offset: {x: 0, y: 0, z: 0}
+  Scale: 1
+  BoneOffset: {fileID: 0}
+  PresetOffset: 0
+  SpawnOffset: 0.3
+  DestroyMethod: 0
+--- !u!1 &1959167142538950
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4904646993792120}
+  - 114: {fileID: 114206418632780855}
+  - 114: {fileID: 114388113031645366}
+  - 114: {fileID: 114402795637458948}
+  - 114: {fileID: 114147140944381957}
+  - 114: {fileID: 114153144430621333}
+  - 114: {fileID: 114451206012947564}
+  - 114: {fileID: 114715938644880209}
+  m_Layer: 0
+  m_Name: OnCast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4904646993792120
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148247687008899}
+  m_RootOrder: 2
+--- !u!114 &114206418632780855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63df3315bc07c122c1dd3b9b85033d26, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  ParticleName: FxSirenScream
+  Parent: 1
+  Rotation: {x: 0, y: 0, z: 0}
+  Offset: {x: 0, y: 0, z: 0}
+  Scale: 1
+  BoneOffset: {fileID: 0}
+  PresetOffset: 0
+  SpawnOffset: 0.3
+  DestroyMethod: 0
+--- !u!114 &114388113031645366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f35c6e164c54b61334c574422cfab1d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Name: Scream
+  Radius: 3
+  Layer:
+    serializedVersion: 2
+    m_Bits: 256
+  HitLayer:
+    serializedVersion: 2
+    m_Bits: 2816
+  CanHitSource: 0
+  TriggerAOEHit: 1
+  TriggerRemoteHit: 1
+  TriggerImpact: 0
+  MatchTag: 0
+  Tags: []
+--- !u!114 &114402795637458948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af0d684721e9da75900d47a31f4e6a0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Name: Ticks
+  Interval: 0.5
+  Repeats: 4
+--- !u!114 &114147140944381957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d00993dd57031eaf75b2ed83b3a3f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Audio: {fileID: 82514012999629871}
+  Clip: {fileID: 8300000, guid: 44e46981663422042a5b76ccad569ac1, type: 3}
+  Volume: 0.48
+  LetTimeAffectPitch: 1
+  Loop: 0
+--- !u!114 &114153144430621333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f3edc7e34f1458c90976931cc7b998, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Intensity: 0.1
+  DecayType: 3
+  Decay: -0.3
+  UseDuration: 1
+  Duration: 0.5
+  StopWhenDestroyed: 1
+  StopOnKill: 0
+  UseDelay: 0
+  Delay: 0
+--- !u!114 &114451206012947564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af0d684721e9da75900d47a31f4e6a0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Name: ShakeDelay
+  Interval: 0.5
+  Repeats: 1
+--- !u!114 &114715938644880209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959167142538950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af0d684721e9da75900d47a31f4e6a0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Name: ForceField
+  Interval: 0.1
+  Repeats: 20
+--- !u!1 &1900850059613669
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4561516098881650}
+  - 114: {fileID: 114166279698960425}
+  - 114: {fileID: 114242022837425734}
+  m_Layer: 0
+  m_Name: OnTimerTick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4561516098881650
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1900850059613669}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148247687008899}
+  m_RootOrder: 3
+--- !u!114 &114166279698960425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1900850059613669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f35c6e164c54b61334c574422cfab1d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 10
+  customEventListeners:
+  - Ticks
+  Name: Scream
+  Radius: 5
+  Layer:
+    serializedVersion: 2
+    m_Bits: 256
+  HitLayer:
+    serializedVersion: 2
+    m_Bits: 2816
+  CanHitSource: 0
+  TriggerAOEHit: 1
+  TriggerRemoteHit: 1
+  TriggerImpact: 0
+  MatchTag: 0
+  Tags: []
+--- !u!114 &114242022837425734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1900850059613669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f35c6e164c54b61334c574422cfab1d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 10
+  customEventListeners:
+  - ForceField
+  Name: ForceField
+  Radius: 5
+  Layer:
+    serializedVersion: 2
+    m_Bits: 67840
+  HitLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  CanHitSource: 0
+  TriggerAOEHit: 0
+  TriggerRemoteHit: 0
+  TriggerImpact: 0
+  MatchTag: 1
+  Tags:
+  - Grenade
+  - Turret
+  - Decoy
+  - ExplosiveProjectile
+--- !u!1 &1848292700291214
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4270404411743765}
+  - 114: {fileID: 114912705396545005}
+  m_Layer: 0
+  m_Name: OnTimerEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4270404411743765
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848292700291214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148247687008899}
+  m_RootOrder: 4
+--- !u!114 &114912705396545005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848292700291214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f3edc7e34f1458c90976931cc7b998, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 11
+  customEventListeners:
+  - ShakeDelay
+  Intensity: 0.4
+  DecayType: 3
+  Decay: 0.4
+  UseDuration: 1
+  Duration: 1.75
+  StopWhenDestroyed: 1
+  StopOnKill: 0
+  UseDelay: 0
+  Delay: 0
+--- !u!1 &1714238797890266
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4448321416700790}
+  - 114: {fileID: 114408302002851386}
+  - 114: {fileID: 114447164200531943}
+  - 114: {fileID: 114700150852748450}
+  m_Layer: 0
+  m_Name: Usage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4448321416700790
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714238797890266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148247687008899}
+  m_RootOrder: 5
+--- !u!114 &114408302002851386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714238797890266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad0220b21d2c7f83075ee5a2f394fc2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ShouldHaveTarget: 1
+--- !u!114 &114447164200531943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714238797890266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab3b1405bb4201856ed6531eb82b732, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ShouldBeInLineOfSight: 1
+--- !u!114 &114700150852748450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714238797890266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51cbd92d0f8107c40ea3e1bf1ef277a9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Range: 5
+  MaxRange: 1

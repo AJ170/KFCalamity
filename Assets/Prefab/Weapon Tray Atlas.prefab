@@ -1,0 +1,2110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1954259746211935}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1954259746211935
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4244524192665004}
+  - 114: {fileID: 114545144555697361}
+  m_Layer: 0
+  m_Name: Weapon Tray Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4244524192665004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1954259746211935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114545144555697361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1954259746211935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: 2a75c2038bd7bef4e94927657580ccb9, type: 2}
+  sprites:
+  - name: icon_ammo_box
+    outer:
+      serializedVersion: 2
+      x: 750
+      y: 883
+      width: 15
+      height: 15
+    inner:
+      serializedVersion: 2
+      x: 750
+      y: 883
+      width: 15
+      height: 15
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: secondary_fire_2
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 129
+      width: 45
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 129
+      width: 45
+      height: 55
+    rotated: 0
+    paddingLeft: 0.2
+    paddingRight: 0.22222222
+    paddingTop: 0.054545455
+    paddingBottom: 0.10909091
+  - name: weapon_tray_bg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 876
+      width: 717
+      height: 148
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 876
+      width: 717
+      height: 148
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_dot
+    outer:
+      serializedVersion: 2
+      x: 766
+      y: 877
+      width: 8
+      height: 8
+    inner:
+      serializedVersion: 2
+      x: 766
+      y: 877
+      width: 8
+      height: 8
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: secondary_fire_1
+    outer:
+      serializedVersion: 2
+      x: 953
+      y: 877
+      width: 50
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 953
+      y: 877
+      width: 50
+      height: 47
+    rotated: 0
+    paddingLeft: 0.16
+    paddingRight: 0.12
+    paddingTop: 0.08510638
+    paddingBottom: 0.27659574
+  - name: icon_trashcan
+    outer:
+      serializedVersion: 2
+      x: 991
+      y: 849
+      width: 26
+      height: 26
+    inner:
+      serializedVersion: 2
+      x: 991
+      y: 849
+      width: 26
+      height: 26
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapon_tray_text_bg
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 832
+      width: 706
+      height: 43
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 832
+      width: 706
+      height: 43
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Axe_gray
+    outer:
+      serializedVersion: 2
+      x: 384
+      y: 787
+      width: 130
+      height: 44
+    inner:
+      serializedVersion: 2
+      x: 384
+      y: 787
+      width: 130
+      height: 44
+    rotated: 0
+    paddingLeft: 0.015384615
+    paddingRight: 0.0076923077
+    paddingTop: 0.022727273
+    paddingBottom: 0.09090909
+  - name: HUD_Katana_gray
+    outer:
+      serializedVersion: 2
+      x: 437
+      y: 463
+      width: 129
+      height: 14
+    inner:
+      serializedVersion: 2
+      x: 437
+      y: 463
+      width: 129
+      height: 14
+    rotated: 0
+    paddingLeft: 0.015503876
+    paddingRight: 0.015503876
+    paddingTop: 1.2142857
+    paddingBottom: 1.2857143
+  - name: HUD_Claymore_gray
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 611
+      width: 130
+      height: 33
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 611
+      width: 130
+      height: 33
+    rotated: 0
+    paddingLeft: 0.015384615
+    paddingRight: 0.0076923077
+    paddingTop: 0.24242425
+    paddingBottom: 0.24242425
+  - name: HUD_Machete_gray
+    outer:
+      serializedVersion: 2
+      x: 123
+      y: 1
+      width: 127
+      height: 17
+    inner:
+      serializedVersion: 2
+      x: 123
+      y: 1
+      width: 127
+      height: 17
+    rotated: 0
+    paddingLeft: 0.023622047
+    paddingRight: 0.023622047
+    paddingTop: 0.88235295
+    paddingBottom: 1
+  - name: HUD_Knife_gray
+    outer:
+      serializedVersion: 2
+      x: 718
+      y: 899
+      width: 98
+      height: 24
+    inner:
+      serializedVersion: 2
+      x: 718
+      y: 899
+      width: 98
+      height: 24
+    rotated: 0
+    paddingLeft: 0.15306123
+    paddingRight: 0.20408164
+    paddingTop: 0.5
+    paddingBottom: 0.5416667
+  - name: HUD_Machete_red
+    outer:
+      serializedVersion: 2
+      x: 677
+      y: 534
+      width: 127
+      height: 17
+    inner:
+      serializedVersion: 2
+      x: 677
+      y: 534
+      width: 127
+      height: 17
+    rotated: 0
+    paddingLeft: 0.023622047
+    paddingRight: 0.023622047
+    paddingTop: 0.88235295
+    paddingBottom: 1
+  - name: HUD_Knife_red
+    outer:
+      serializedVersion: 2
+      x: 911
+      y: 807
+      width: 98
+      height: 24
+    inner:
+      serializedVersion: 2
+      x: 911
+      y: 807
+      width: 98
+      height: 24
+    rotated: 0
+    paddingLeft: 0.15306123
+    paddingRight: 0.20408164
+    paddingTop: 0.5
+    paddingBottom: 0.5416667
+  - name: HUD_Axe_red
+    outer:
+      serializedVersion: 2
+      x: 646
+      y: 787
+      width: 130
+      height: 44
+    inner:
+      serializedVersion: 2
+      x: 646
+      y: 787
+      width: 130
+      height: 44
+    rotated: 0
+    paddingLeft: 0.015384615
+    paddingRight: 0.0076923077
+    paddingTop: 0.022727273
+    paddingBottom: 0.09090909
+  - name: HUD_Katana_red
+    outer:
+      serializedVersion: 2
+      x: 833
+      y: 488
+      width: 129
+      height: 14
+    inner:
+      serializedVersion: 2
+      x: 833
+      y: 488
+      width: 129
+      height: 14
+    rotated: 0
+    paddingLeft: 0.015503876
+    paddingRight: 0.015503876
+    paddingTop: 1.2142857
+    paddingBottom: 1.2857143
+  - name: HUD_Claymore_red
+    outer:
+      serializedVersion: 2
+      x: 682
+      y: 659
+      width: 130
+      height: 33
+    inner:
+      serializedVersion: 2
+      x: 682
+      y: 659
+      width: 130
+      height: 33
+    rotated: 0
+    paddingLeft: 0.015384615
+    paddingRight: 0.0076923077
+    paddingTop: 0.24242425
+    paddingBottom: 0.24242425
+  - name: HUD_Knife_white
+    outer:
+      serializedVersion: 2
+      x: 921
+      y: 762
+      width: 98
+      height: 24
+    inner:
+      serializedVersion: 2
+      x: 921
+      y: 762
+      width: 98
+      height: 24
+    rotated: 0
+    paddingLeft: 0.15306123
+    paddingRight: 0.20408164
+    paddingTop: 0.5
+    paddingBottom: 0.5416667
+  - name: HUD_Claymore_white
+    outer:
+      serializedVersion: 2
+      x: 813
+      y: 659
+      width: 130
+      height: 33
+    inner:
+      serializedVersion: 2
+      x: 813
+      y: 659
+      width: 130
+      height: 33
+    rotated: 0
+    paddingLeft: 0.015384615
+    paddingRight: 0.0076923077
+    paddingTop: 0.24242425
+    paddingBottom: 0.24242425
+  - name: HUD_Axe_white
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 787
+      width: 130
+      height: 44
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 787
+      width: 130
+      height: 44
+    rotated: 0
+    paddingLeft: 0.015384615
+    paddingRight: 0.0076923077
+    paddingTop: 0.022727273
+    paddingBottom: 0.09090909
+  - name: HUD_Machete_white
+    outer:
+      serializedVersion: 2
+      x: 810
+      y: 534
+      width: 127
+      height: 17
+    inner:
+      serializedVersion: 2
+      x: 810
+      y: 534
+      width: 127
+      height: 17
+    rotated: 0
+    paddingLeft: 0.023622047
+    paddingRight: 0.023622047
+    paddingTop: 0.88235295
+    paddingBottom: 1
+  - name: HUD_Katana_white
+    outer:
+      serializedVersion: 2
+      x: 567
+      y: 463
+      width: 129
+      height: 14
+    inner:
+      serializedVersion: 2
+      x: 567
+      y: 463
+      width: 129
+      height: 14
+    rotated: 0
+    paddingLeft: 0.015503876
+    paddingRight: 0.015503876
+    paddingTop: 1.2142857
+    paddingBottom: 1.2857143
+  - name: HUD_FlameThrower_white
+    outer:
+      serializedVersion: 2
+      x: 466
+      y: 645
+      width: 107
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 466
+      y: 645
+      width: 107
+      height: 47
+    rotated: 0
+    paddingLeft: 0.07476635
+    paddingRight: 0.1682243
+    paddingTop: 0.021276595
+    paddingBottom: 0.021276595
+  - name: HUD_Bullpup_white
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 493
+      width: 98
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 493
+      width: 98
+      height: 49
+    rotated: 0
+    paddingLeft: 0.1632653
+    paddingRight: 0.19387755
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_AA12_white
+    outer:
+      serializedVersion: 2
+      x: 101
+      y: 620
+      width: 133
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 620
+      width: 133
+      height: 49
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Beneli_white
+    outer:
+      serializedVersion: 2
+      x: 886
+      y: 580
+      width: 131
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 886
+      y: 580
+      width: 131
+      height: 30
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.23333333
+    paddingBottom: 0.4
+  - name: HUD_M4203_white
+    outer:
+      serializedVersion: 2
+      x: 101
+      y: 370
+      width: 131
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 370
+      width: 131
+      height: 49
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Scar_white
+    outer:
+      serializedVersion: 2
+      x: 655
+      y: 747
+      width: 132
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 655
+      y: 747
+      width: 132
+      height: 39
+    rotated: 0
+    paddingLeft: 0.007575758
+    paddingRight: 0
+    paddingTop: 0.102564104
+    paddingBottom: 0.15384616
+  - name: HUD_M14_white
+    outer:
+      serializedVersion: 2
+      x: 810
+      y: 552
+      width: 132
+      height: 27
+    inner:
+      serializedVersion: 2
+      x: 810
+      y: 552
+      width: 132
+      height: 27
+    rotated: 0
+    paddingLeft: 0.007575758
+    paddingRight: 0
+    paddingTop: 0.37037036
+    paddingBottom: 0.44444445
+  - name: HUD_M4_white
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 169
+      width: 130
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 169
+      width: 130
+      height: 49
+    rotated: 0
+    paddingLeft: 0.0076923077
+    paddingRight: 0.015384615
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_M32_white
+    outer:
+      serializedVersion: 2
+      x: 101
+      y: 520
+      width: 131
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 520
+      width: 131
+      height: 49
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_MP5Medic_white
+    outer:
+      serializedVersion: 2
+      x: 131
+      y: 169
+      width: 117
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 131
+      y: 169
+      width: 117
+      height: 49
+    rotated: 0
+    paddingLeft: 0.07692308
+    paddingRight: 0.05982906
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_CombatShotgun_white
+    outer:
+      serializedVersion: 2
+      x: 754
+      y: 580
+      width: 131
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 754
+      y: 580
+      width: 131
+      height: 30
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.33333334
+    paddingBottom: 0.3
+  - name: HUD_LAW_white
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 121
+      width: 122
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 121
+      width: 122
+      height: 47
+    rotated: 0
+    paddingLeft: 0.04918033
+    paddingRight: 0.040983606
+    paddingTop: 0.021276595
+    paddingBottom: 0.021276595
+  - name: HUD_Mac10_white
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 530
+      width: 78
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 530
+      width: 78
+      height: 49
+    rotated: 0
+    paddingLeft: 0.2820513
+    paddingRight: 0.42307693
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_AK47_white
+    outer:
+      serializedVersion: 2
+      x: 593
+      y: 694
+      width: 109
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 593
+      y: 694
+      width: 109
+      height: 48
+    rotated: 0
+    paddingLeft: 0.08256881
+    paddingRight: 0.13761468
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_M79_white
+    outer:
+      serializedVersion: 2
+      x: 702
+      y: 503
+      width: 131
+      height: 27
+    inner:
+      serializedVersion: 2
+      x: 702
+      y: 503
+      width: 131
+      height: 27
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.37037036
+    paddingBottom: 0.44444445
+  - name: HUD_Winchester_white
+    outer:
+      serializedVersion: 2
+      x: 437
+      y: 478
+      width: 131
+      height: 24
+    inner:
+      serializedVersion: 2
+      x: 437
+      y: 478
+      width: 131
+      height: 24
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.5833333
+    paddingBottom: 0.45833334
+  - name: HUD_Crossbow_white
+    outer:
+      serializedVersion: 2
+      x: 131
+      y: 219
+      width: 117
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 131
+      y: 219
+      width: 117
+      height: 49
+    rotated: 0
+    paddingLeft: 0.05982906
+    paddingRight: 0.07692308
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Huskgun_white
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 593
+      width: 104
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 593
+      width: 104
+      height: 49
+    rotated: 0
+    paddingLeft: 0.16346154
+    paddingRight: 0.115384616
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_MP7Medic_white
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 693
+      width: 114
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 693
+      width: 114
+      height: 49
+    rotated: 0
+    paddingLeft: 0.10526316
+    paddingRight: 0.06140351
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_HuntingShotgun_white
+    outer:
+      serializedVersion: 2
+      x: 489
+      y: 613
+      width: 130
+      height: 31
+    inner:
+      serializedVersion: 2
+      x: 489
+      y: 613
+      width: 130
+      height: 31
+    rotated: 0
+    paddingLeft: 0.0076923077
+    paddingRight: 0.015384615
+    paddingTop: 0.22580644
+    paddingBottom: 0.3548387
+  - name: HUD_MP5Medic_red
+    outer:
+      serializedVersion: 2
+      x: 131
+      y: 269
+      width: 117
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 131
+      y: 269
+      width: 117
+      height: 49
+    rotated: 0
+    paddingLeft: 0.07692308
+    paddingRight: 0.05982906
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_CombatShotgun_red
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 580
+      width: 131
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 580
+      width: 131
+      height: 30
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.33333334
+    paddingBottom: 0.3
+  - name: HUD_Bullpup_red
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 443
+      width: 98
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 443
+      width: 98
+      height: 49
+    rotated: 0
+    paddingLeft: 0.1632653
+    paddingRight: 0.19387755
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_M4203_red
+    outer:
+      serializedVersion: 2
+      x: 101
+      y: 320
+      width: 131
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 320
+      width: 131
+      height: 49
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_MP7Medic_red
+    outer:
+      serializedVersion: 2
+      x: 368
+      y: 693
+      width: 114
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 368
+      y: 693
+      width: 114
+      height: 49
+    rotated: 0
+    paddingLeft: 0.10526316
+    paddingRight: 0.06140351
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_M79_red
+    outer:
+      serializedVersion: 2
+      x: 570
+      y: 503
+      width: 131
+      height: 27
+    inner:
+      serializedVersion: 2
+      x: 570
+      y: 503
+      width: 131
+      height: 27
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.37037036
+    paddingBottom: 0.44444445
+  - name: HUD_Crossbow_red
+    outer:
+      serializedVersion: 2
+      x: 123
+      y: 69
+      width: 117
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 123
+      y: 69
+      width: 117
+      height: 49
+    rotated: 0
+    paddingLeft: 0.05982906
+    paddingRight: 0.07692308
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_AK47_red
+    outer:
+      serializedVersion: 2
+      x: 703
+      y: 694
+      width: 109
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 703
+      y: 694
+      width: 109
+      height: 48
+    rotated: 0
+    paddingLeft: 0.08256881
+    paddingRight: 0.13761468
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_M32_red
+    outer:
+      serializedVersion: 2
+      x: 101
+      y: 420
+      width: 131
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 420
+      width: 131
+      height: 49
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Huskgun_red
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 543
+      width: 104
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 543
+      width: 104
+      height: 49
+    rotated: 0
+    paddingLeft: 0.16346154
+    paddingRight: 0.115384616
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_HuntingShotgun_red
+    outer:
+      serializedVersion: 2
+      x: 620
+      y: 613
+      width: 130
+      height: 31
+    inner:
+      serializedVersion: 2
+      x: 620
+      y: 613
+      width: 130
+      height: 31
+    rotated: 0
+    paddingLeft: 0.0076923077
+    paddingRight: 0.015384615
+    paddingTop: 0.22580644
+    paddingBottom: 0.3548387
+  - name: HUD_Winchester_red
+    outer:
+      serializedVersion: 2
+      x: 569
+      y: 478
+      width: 131
+      height: 24
+    inner:
+      serializedVersion: 2
+      x: 569
+      y: 478
+      width: 131
+      height: 24
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.5833333
+    paddingBottom: 0.45833334
+  - name: HUD_FlameThrower_red
+    outer:
+      serializedVersion: 2
+      x: 574
+      y: 645
+      width: 107
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 574
+      y: 645
+      width: 107
+      height: 47
+    rotated: 0
+    paddingLeft: 0.07476635
+    paddingRight: 0.1682243
+    paddingTop: 0.021276595
+    paddingBottom: 0.021276595
+  - name: HUD_Beneli_red
+    outer:
+      serializedVersion: 2
+      x: 882
+      y: 614
+      width: 131
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 882
+      y: 614
+      width: 131
+      height: 30
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.23333333
+    paddingBottom: 0.4
+  - name: HUD_Scar_red
+    outer:
+      serializedVersion: 2
+      x: 813
+      y: 703
+      width: 132
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 813
+      y: 703
+      width: 132
+      height: 39
+    rotated: 0
+    paddingLeft: 0.007575758
+    paddingRight: 0
+    paddingTop: 0.102564104
+    paddingBottom: 0.15384616
+  - name: HUD_LAW_red
+    outer:
+      serializedVersion: 2
+      x: 819
+      y: 877
+      width: 122
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 819
+      y: 877
+      width: 122
+      height: 47
+    rotated: 0
+    paddingLeft: 0.04918033
+    paddingRight: 0.040983606
+    paddingTop: 0.021276595
+    paddingBottom: 0.021276595
+  - name: HUD_AA12_red
+    outer:
+      serializedVersion: 2
+      x: 819
+      y: 925
+      width: 133
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 819
+      y: 925
+      width: 133
+      height: 49
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Mac10_red
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 49
+      width: 78
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 49
+      width: 78
+      height: 49
+    rotated: 0
+    paddingLeft: 0.2820513
+    paddingRight: 0.42307693
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_M14_red
+    outer:
+      serializedVersion: 2
+      x: 677
+      y: 552
+      width: 132
+      height: 27
+    inner:
+      serializedVersion: 2
+      x: 677
+      y: 552
+      width: 132
+      height: 27
+    rotated: 0
+    paddingLeft: 0.007575758
+    paddingRight: 0
+    paddingTop: 0.37037036
+    paddingBottom: 0.44444445
+  - name: HUD_M4_red
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 269
+      width: 130
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 269
+      width: 130
+      height: 49
+    rotated: 0
+    paddingLeft: 0.0076923077
+    paddingRight: 0.015384615
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Beneli_gray
+    outer:
+      serializedVersion: 2
+      x: 490
+      y: 580
+      width: 131
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 490
+      y: 580
+      width: 131
+      height: 30
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.23333333
+    paddingBottom: 0.4
+  - name: HUD_M4_gray
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 219
+      width: 130
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 219
+      width: 130
+      height: 49
+    rotated: 0
+    paddingLeft: 0.0076923077
+    paddingRight: 0.015384615
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_CombatShotgun_gray
+    outer:
+      serializedVersion: 2
+      x: 622
+      y: 580
+      width: 131
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 622
+      y: 580
+      width: 131
+      height: 30
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.33333334
+    paddingBottom: 0.3
+  - name: HUD_Scar_gray
+    outer:
+      serializedVersion: 2
+      x: 788
+      y: 747
+      width: 132
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 788
+      y: 747
+      width: 132
+      height: 39
+    rotated: 0
+    paddingLeft: 0.007575758
+    paddingRight: 0
+    paddingTop: 0.102564104
+    paddingBottom: 0.15384616
+  - name: HUD_Mac10_gray
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 480
+      width: 78
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 480
+      width: 78
+      height: 49
+    rotated: 0
+    paddingLeft: 0.2820513
+    paddingRight: 0.42307693
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_M32_gray
+    outer:
+      serializedVersion: 2
+      x: 101
+      y: 570
+      width: 131
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 570
+      width: 131
+      height: 49
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_FlameThrower_gray
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 645
+      width: 107
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 645
+      width: 107
+      height: 47
+    rotated: 0
+    paddingLeft: 0.07476635
+    paddingRight: 0.1682243
+    paddingTop: 0.021276595
+    paddingBottom: 0.021276595
+  - name: HUD_M4203_gray
+    outer:
+      serializedVersion: 2
+      x: 101
+      y: 470
+      width: 131
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 101
+      y: 470
+      width: 131
+      height: 49
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_M79_gray
+    outer:
+      serializedVersion: 2
+      x: 834
+      y: 503
+      width: 131
+      height: 27
+    inner:
+      serializedVersion: 2
+      x: 834
+      y: 503
+      width: 131
+      height: 27
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.37037036
+    paddingBottom: 0.44444445
+  - name: HUD_AA12_gray
+    outer:
+      serializedVersion: 2
+      x: 819
+      y: 975
+      width: 133
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 819
+      y: 975
+      width: 133
+      height: 49
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Bullpup_gray
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 393
+      width: 98
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 393
+      width: 98
+      height: 49
+    rotated: 0
+    paddingLeft: 0.1632653
+    paddingRight: 0.19387755
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Huskgun_gray
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 643
+      width: 104
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 643
+      width: 104
+      height: 49
+    rotated: 0
+    paddingLeft: 0.16346154
+    paddingRight: 0.115384616
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Winchester_gray
+    outer:
+      serializedVersion: 2
+      x: 701
+      y: 478
+      width: 131
+      height: 24
+    inner:
+      serializedVersion: 2
+      x: 701
+      y: 478
+      width: 131
+      height: 24
+    rotated: 0
+    paddingLeft: 0.007633588
+    paddingRight: 0.007633588
+    paddingTop: 0.5833333
+    paddingBottom: 0.45833334
+  - name: HUD_M14_gray
+    outer:
+      serializedVersion: 2
+      x: 437
+      y: 503
+      width: 132
+      height: 27
+    inner:
+      serializedVersion: 2
+      x: 437
+      y: 503
+      width: 132
+      height: 27
+    rotated: 0
+    paddingLeft: 0.007575758
+    paddingRight: 0
+    paddingTop: 0.37037036
+    paddingBottom: 0.44444445
+  - name: HUD_MP5Medic_gray
+    outer:
+      serializedVersion: 2
+      x: 123
+      y: 119
+      width: 117
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 123
+      y: 119
+      width: 117
+      height: 49
+    rotated: 0
+    paddingLeft: 0.07692308
+    paddingRight: 0.05982906
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_LAW_gray
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 73
+      width: 122
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 73
+      width: 122
+      height: 47
+    rotated: 0
+    paddingLeft: 0.04918033
+    paddingRight: 0.040983606
+    paddingTop: 0.021276595
+    paddingBottom: 0.021276595
+  - name: HUD_AK47_gray
+    outer:
+      serializedVersion: 2
+      x: 483
+      y: 694
+      width: 109
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 483
+      y: 694
+      width: 109
+      height: 48
+    rotated: 0
+    paddingLeft: 0.08256881
+    paddingRight: 0.13761468
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_MP7Medic_gray
+    outer:
+      serializedVersion: 2
+      x: 123
+      y: 19
+      width: 114
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 123
+      y: 19
+      width: 114
+      height: 49
+    rotated: 0
+    paddingLeft: 0.10526316
+    paddingRight: 0.06140351
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Crossbow_gray
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 23
+      width: 117
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 23
+      width: 117
+      height: 49
+    rotated: 0
+    paddingLeft: 0.05982906
+    paddingRight: 0.07692308
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_HuntingShotgun_gray
+    outer:
+      serializedVersion: 2
+      x: 751
+      y: 613
+      width: 130
+      height: 31
+    inner:
+      serializedVersion: 2
+      x: 751
+      y: 613
+      width: 130
+      height: 31
+    rotated: 0
+    paddingLeft: 0.0076923077
+    paddingRight: 0.015384615
+    paddingTop: 0.22580644
+    paddingBottom: 0.3548387
+  - name: HUD_HandcannonDual_white
+    outer:
+      serializedVersion: 2
+      x: 953
+      y: 975
+      width: 65
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 953
+      y: 975
+      width: 65
+      height: 49
+    rotated: 0
+    paddingLeft: 0.47692308
+    paddingRight: 0.5692308
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Revolver_white
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 344
+      width: 98
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 344
+      width: 98
+      height: 48
+    rotated: 0
+    paddingLeft: 0.1734694
+    paddingRight: 0.18367347
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_9mm_white
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 235
+      width: 74
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 235
+      width: 74
+      height: 48
+    rotated: 0
+    paddingLeft: 0.36486486
+    paddingRight: 0.43243244
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_Handcannon_white
+    outer:
+      serializedVersion: 2
+      x: 437
+      y: 531
+      width: 79
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 437
+      y: 531
+      width: 79
+      height: 48
+    rotated: 0
+    paddingLeft: 0.3164557
+    paddingRight: 0.36708862
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_9mmDual_white
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 148
+      width: 88
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 148
+      width: 88
+      height: 48
+    rotated: 0
+    paddingLeft: 0.19318181
+    paddingRight: 0.3181818
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_RevolverDual_white
+    outer:
+      serializedVersion: 2
+      x: 946
+      y: 694
+      width: 75
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 946
+      y: 694
+      width: 75
+      height: 48
+    rotated: 0
+    paddingLeft: 0.33333334
+    paddingRight: 0.44
+    paddingTop: 0
+    paddingBottom: 0.020833334
+  - name: HUD_Revolver_red
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 295
+      width: 98
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 295
+      width: 98
+      height: 48
+    rotated: 0
+    paddingLeft: 0.1734694
+    paddingRight: 0.18367347
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_9mmDual_red
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 197
+      width: 88
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 197
+      width: 88
+      height: 48
+    rotated: 0
+    paddingLeft: 0.19318181
+    paddingRight: 0.3181818
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_RevolverDual_red
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 382
+      width: 75
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 382
+      width: 75
+      height: 48
+    rotated: 0
+    paddingLeft: 0.33333334
+    paddingRight: 0.44
+    paddingTop: 0
+    paddingBottom: 0.020833334
+  - name: HUD_9mm_red
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 333
+      width: 74
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 333
+      width: 74
+      height: 48
+    rotated: 0
+    paddingLeft: 0.36486486
+    paddingRight: 0.43243244
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_HandcannonDual_red
+    outer:
+      serializedVersion: 2
+      x: 953
+      y: 925
+      width: 65
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 953
+      y: 925
+      width: 65
+      height: 49
+    rotated: 0
+    paddingLeft: 0.47692308
+    paddingRight: 0.5692308
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Handcannon_red
+    outer:
+      serializedVersion: 2
+      x: 597
+      y: 531
+      width: 79
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 597
+      y: 531
+      width: 79
+      height: 48
+    rotated: 0
+    paddingLeft: 0.3164557
+    paddingRight: 0.36708862
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_9mm_gray
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 284
+      width: 74
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 284
+      width: 74
+      height: 48
+    rotated: 0
+    paddingLeft: 0.36486486
+    paddingRight: 0.43243244
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_Revolver_gray
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 246
+      width: 98
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 246
+      width: 98
+      height: 48
+    rotated: 0
+    paddingLeft: 0.1734694
+    paddingRight: 0.18367347
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_HandcannonDual_gray
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 185
+      width: 65
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 185
+      width: 65
+      height: 49
+    rotated: 0
+    paddingLeft: 0.47692308
+    paddingRight: 0.5692308
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_9mmDual_gray
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 99
+      width: 88
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 99
+      width: 88
+      height: 48
+    rotated: 0
+    paddingLeft: 0.19318181
+    paddingRight: 0.3181818
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: HUD_RevolverDual_gray
+    outer:
+      serializedVersion: 2
+      x: 358
+      y: 431
+      width: 75
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 358
+      y: 431
+      width: 75
+      height: 48
+    rotated: 0
+    paddingLeft: 0.33333334
+    paddingRight: 0.44
+    paddingTop: 0
+    paddingBottom: 0.020833334
+  - name: HUD_Handcannon_gray
+    outer:
+      serializedVersion: 2
+      x: 517
+      y: 531
+      width: 79
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 517
+      y: 531
+      width: 79
+      height: 48
+    rotated: 0
+    paddingLeft: 0.3164557
+    paddingRight: 0.36708862
+    paddingTop: 0.020833334
+    paddingBottom: 0
+  - name: button_bar_frame
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 319
+      width: 100
+      height: 350
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 319
+      width: 100
+      height: 350
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button_bar_cross
+    outer:
+      serializedVersion: 2
+      x: 960
+      y: 845
+      width: 30
+      height: 30
+    inner:
+      serializedVersion: 2
+      x: 960
+      y: 845
+      width: 30
+      height: 30
+    rotated: 0
+    paddingLeft: 0.06666667
+    paddingRight: 0.06666667
+    paddingTop: 0.06666667
+    paddingBottom: 0.06666667
+  - name: button_moveable_bg
+    outer:
+      serializedVersion: 2
+      x: 718
+      y: 924
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 718
+      y: 924
+      width: 100
+      height: 100
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Axe
+    outer:
+      serializedVersion: 2
+      x: 515
+      y: 787
+      width: 130
+      height: 44
+    inner:
+      serializedVersion: 2
+      x: 515
+      y: 787
+      width: 130
+      height: 44
+    rotated: 0
+    paddingLeft: 0.015384615
+    paddingRight: 0.0076923077
+    paddingTop: 0.022727273
+    paddingBottom: 0.09090909
+  - name: open_indicator_01
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 670
+      width: 252
+      height: 205
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 670
+      width: 252
+      height: 205
+    rotated: 0
+    paddingLeft: 0.007936508
+    paddingRight: 0.007936508
+    paddingTop: 0.11707317
+    paddingBottom: 0.13170731
+  - name: HUD_Chainsaw
+    outer:
+      serializedVersion: 2
+      x: 253
+      y: 743
+      width: 133
+      height: 43
+    inner:
+      serializedVersion: 2
+      x: 253
+      y: 743
+      width: 133
+      height: 43
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.046511628
+    paddingBottom: 0.093023255
+  - name: HUD_Chainsaw_white
+    outer:
+      serializedVersion: 2
+      x: 387
+      y: 743
+      width: 133
+      height: 43
+    inner:
+      serializedVersion: 2
+      x: 387
+      y: 743
+      width: 133
+      height: 43
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.046511628
+    paddingBottom: 0.093023255
+  - name: HUD_Chainsaw_red
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 743
+      width: 133
+      height: 43
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 743
+      width: 133
+      height: 43
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.046511628
+    paddingBottom: 0.093023255
+  - name: HUD_Chainsaw_gray
+    outer:
+      serializedVersion: 2
+      x: 777
+      y: 788
+      width: 133
+      height: 43
+    inner:
+      serializedVersion: 2
+      x: 777
+      y: 788
+      width: 133
+      height: 43
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.046511628
+    paddingBottom: 0.093023255
+  - name: hud_swipe_arrow_right
+    outer:
+      serializedVersion: 2
+      x: 718
+      y: 882
+      width: 15
+      height: 16
+    inner:
+      serializedVersion: 2
+      x: 718
+      y: 882
+      width: 15
+      height: 16
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.06666667
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_swipe_dot_no_ammo
+    outer:
+      serializedVersion: 2
+      x: 792
+      y: 886
+      width: 12
+      height: 12
+    inner:
+      serializedVersion: 2
+      x: 792
+      y: 886
+      width: 12
+      height: 12
+    rotated: 0
+    paddingLeft: 0.16666667
+    paddingRight: 0.16666667
+    paddingTop: 0.16666667
+    paddingBottom: 0.16666667
+  - name: hud_swipe_arrow_left
+    outer:
+      serializedVersion: 2
+      x: 734
+      y: 882
+      width: 15
+      height: 16
+    inner:
+      serializedVersion: 2
+      x: 734
+      y: 882
+      width: 15
+      height: 16
+    rotated: 0
+    paddingLeft: 0.06666667
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_swipe_dot_selected
+    outer:
+      serializedVersion: 2
+      x: 779
+      y: 886
+      width: 12
+      height: 12
+    inner:
+      serializedVersion: 2
+      x: 779
+      y: 886
+      width: 12
+      height: 12
+    rotated: 0
+    paddingLeft: 0.16666667
+    paddingRight: 0.16666667
+    paddingTop: 0.16666667
+    paddingBottom: 0.16666667
+  - name: hud_swipe_dot_unselected
+    outer:
+      serializedVersion: 2
+      x: 766
+      y: 886
+      width: 12
+      height: 12
+    inner:
+      serializedVersion: 2
+      x: 766
+      y: 886
+      width: 12
+      height: 12
+    rotated: 0
+    paddingLeft: 0.16666667
+    paddingRight: 0.16666667
+    paddingTop: 0.16666667
+    paddingBottom: 0.16666667
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1316907349351467}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1316907349351467
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4971194342092148}
+  - 114: {fileID: 114771817431881329}
+  m_Layer: 0
+  m_Name: PatriarchHealMoveAbility
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4971194342092148
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316907349351467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.698749, y: 4.0897226E-07, z: 4.2946987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4148269324176743}
+  - {fileID: 4267451174560577}
+  - {fileID: 4701501721633150}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114771817431881329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316907349351467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cd9a76c3c6627575145bf25bfbbef5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: PatriarchHealMove
+  Description:
+  Type: 1
+  Image:
+  ChargeUp: 2
+  WindDown: 0
+  Cooldown: 15
+  MoveAndUse: 3
+  CancelReload: 1
+  UseCharges: 1
+  MaxCharges: 3
+  StartCharges: 3
+  UseRandomCooldown: 0
+  MinCooldown: 1
+  MaxCooldown: 1
+  CanDud: 0
+  DudChance: 0.1
+  DudMinCooldown: 1
+  DudMaxCooldown: 1
+  CanBeCast: 1
+--- !u!1 &1134136987787894
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4148269324176743}
+  - 114: {fileID: 114849126636476566}
+  - 114: {fileID: 114575396525844739}
+  m_Layer: 0
+  m_Name: OnChargeUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4148269324176743
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134136987787894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4971194342092148}
+  m_RootOrder: 0
+--- !u!114 &114849126636476566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134136987787894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb007fad7f60e676985675f7e69e345, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 3
+  customEventListeners: []
+  TriggerCategory: 2
+  PlayerTrigger: 2
+  ZedTrigger: 1
+  CustomTrigger: Knockdown
+  Type: 0
+  Duration: 0
+  Value: 1
+--- !u!114 &114575396525844739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134136987787894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d606c0486218c63e5eddc086de74248a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 3
+  customEventListeners: []
+  spawnPoint: {fileID: 0}
+  MinRange: 20
+  MaxRange: 50
+--- !u!1 &1305703471009245
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4267451174560577}
+  - 114: {fileID: 114475996485148805}
+  m_Layer: 0
+  m_Name: Usage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4267451174560577
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305703471009245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4971194342092148}
+  m_RootOrder: 1
+--- !u!114 &114475996485148805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305703471009245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b782e366d4bb08f9fa65cde3430587, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Threshold: 0.4
+  CompareMetod: 1
+--- !u!1 &1669944124418011
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4701501721633150}
+  - 114: {fileID: 114097956068070429}
+  - 114: {fileID: 114970364669216822}
+  - 114: {fileID: 114819061491525963}
+  - 114: {fileID: 114237212294164210}
+  - 114: {fileID: 114639391771107754}
+  m_Layer: 0
+  m_Name: OnCast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4701501721633150
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669944124418011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4971194342092148}
+  m_RootOrder: 2
+--- !u!114 &114097956068070429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669944124418011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3e672c7fc21c7c7130559698777cf8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Wave1:
+    Squads: 01000000010000000200000002000000
+    TotalEnemeis: 10
+    MaxEnemiesAtOnce: 8
+  Wave2:
+    Squads: 01000000010000000200000003000000030000000600000006000000
+    TotalEnemeis: 15
+    MaxEnemiesAtOnce: 9
+  Wave3:
+    Squads: 01000000010000000200000002000000030000000300000005000000050000000c0000000c0000001000000010000000
+    TotalEnemeis: 15
+    MaxEnemiesAtOnce: 10
+--- !u!114 &114970364669216822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669944124418011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c6fc5748bb0c53e0b78cbe2eb6e7ae, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  StealthVisibility: 0
+  FadeSpeed: 1
+  CanBeDetected: 0
+--- !u!114 &114819061491525963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669944124418011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5d00de80a2399e2da455c79c7651a5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Target: 3
+  Event: 1
+--- !u!114 &114237212294164210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669944124418011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2e02b5b3cc2dff5da04d917633c2ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Target: 1
+  ComponentName: PatriarchHealDamageReductionEffect
+--- !u!114 &114639391771107754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669944124418011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d86ad165867370bbd0fc6fdcd59072, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Trigger: 2
+  customEventListeners: []
+  Ability: {fileID: 114771817431881329}
+  AbilitiesToEnable:
+  - Charges: 2
+    Name: PatriarchRocketLauncher
+  - Charges: 1
+    Name: PatriarchRocketRain
+  - Charges: 0
+    Name: PatriarchLastStand

@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1968964778599087}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1968964778599087
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4580469489129466}
+  - 114: {fileID: 114127428928877260}
+  - 114: {fileID: 114326698798436164}
+  - 114: {fileID: 114307075362385613}
+  - 114: {fileID: 114466656959575115}
+  - 114: {fileID: 114733848354239981}
+  m_Layer: 0
+  m_Name: MenuCameraPaths
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4580469489129466
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968964778599087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114127428928877260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968964778599087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08e345a12fc4436ae121bb7dac4cb32, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathName: MainToLevel
+  pathColor: {r: 0.98507464, g: 0, b: 0, a: 1}
+  nodes:
+  - {x: 3.9231489, y: 2.2012577, z: 0.62986815}
+  - {x: 2.322498, y: 2.104534, z: -0.7312134}
+  - {x: 0.30903578, y: 2.2476032, z: -1.6264639}
+  - {x: -3.8657758, y: 2.7960622, z: -0.60612226}
+  nodeCount: 4
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &114326698798436164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968964778599087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08e345a12fc4436ae121bb7dac4cb32, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathName: LevelToCharacter
+  pathColor: {r: 1, g: 0.6503496, b: 0, a: 1}
+  nodes:
+  - {x: -3.865776, y: 2.796062, z: -0.6061223}
+  - {x: -3.8193183, y: 2.0908585, z: 0.54752076}
+  - {x: -3.638147, y: 2.0577612, z: 2.2725725}
+  nodeCount: 3
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &114307075362385613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968964778599087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08e345a12fc4436ae121bb7dac4cb32, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathName: CharacterToPlay
+  pathColor: {r: 0.9376767, g: 0.95522386, b: 0.3279127, a: 1}
+  nodes:
+  - {x: -3.6381469, y: 2.057761, z: 1.737951}
+  - {x: -3.9911604, y: 0.5736437, z: 13.716902}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 0
+--- !u!114 &114466656959575115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968964778599087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08e345a12fc4436ae121bb7dac4cb32, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathName: MainToOptions
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 5.129, y: 2.522328, z: 0.84058}
+  - {x: 3.6661665, y: 2.4525828, z: -1.3984134}
+  - {x: 4.3420477, y: 2.2741613, z: -3.1757283}
+  nodeCount: 3
+  initialized: 1
+  initialName: New Path 2
+  pathVisible: 0
+--- !u!114 &114733848354239981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968964778599087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08e345a12fc4436ae121bb7dac4cb32, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathName: MainToTutorial
+  pathColor: {r: 0, g: 0.619403, b: 0.07363539, a: 1}
+  nodes:
+  - {x: 4.7107577, y: 2.5223281, z: 0.84058}
+  - {x: 1.3484182, y: 2.608729, z: 2.1575937}
+  - {x: 1.5828454, y: 2.348275, z: 4.962568}
+  - {x: 8.615221, y: -1.9322548, z: 5.434508}
+  nodeCount: 4
+  initialized: 1
+  initialName: New Path 3
+  pathVisible: 0

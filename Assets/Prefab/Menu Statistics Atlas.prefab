@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1198376564301481}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1198376564301481
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4940009860702467}
+  - 114: {fileID: 114644268487979943}
+  m_Layer: 0
+  m_Name: Menu Statistics Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4940009860702467
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198376564301481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114644268487979943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198376564301481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: 17d0d358c0ac7824ab5f94ae78527f87, type: 2}
+  sprites:
+  - name: hud_patriarch_hp_bar_hp
+    outer:
+      serializedVersion: 2
+      x: 459
+      y: 1001
+      width: 448
+      height: 23
+    inner:
+      serializedVersion: 2
+      x: 459
+      y: 1001
+      width: 448
+      height: 23
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: gui_berserker
+    outer:
+      serializedVersion: 2
+      x: 79
+      y: 215
+      width: 35
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 79
+      y: 215
+      width: 35
+      height: 58
+    rotated: 0
+    paddingLeft: 0.14285715
+    paddingRight: 0.14285715
+    paddingTop: 0.20689656
+    paddingBottom: 0.05172414
+  - name: gui_commando
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 213
+      width: 38
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 213
+      width: 38
+      height: 60
+    rotated: 0
+    paddingLeft: 0.078947365
+    paddingRight: 0.10526316
+    paddingTop: 0.16666667
+    paddingBottom: 0.05
+  - name: gui_sharpshooter
+    outer:
+      serializedVersion: 2
+      x: 39
+      y: 215
+      width: 39
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 39
+      y: 215
+      width: 39
+      height: 58
+    rotated: 0
+    paddingLeft: 0.07692308
+    paddingRight: 0.07692308
+    paddingTop: 0.20689656
+    paddingBottom: 0.05172414
+  - name: gui_firebug
+    outer:
+      serializedVersion: 2
+      x: 115
+      y: 216
+      width: 35
+      height: 57
+    inner:
+      serializedVersion: 2
+      x: 115
+      y: 216
+      width: 35
+      height: 57
+    rotated: 0
+    paddingLeft: 0.14285715
+    paddingRight: 0.14285715
+    paddingTop: 0.22807017
+    paddingBottom: 0.05263158
+  - name: gui_medic
+    outer:
+      serializedVersion: 2
+      x: 36
+      y: 160
+      width: 35
+      height: 52
+    inner:
+      serializedVersion: 2
+      x: 36
+      y: 160
+      width: 35
+      height: 52
+    rotated: 0
+    paddingLeft: 0.14285715
+    paddingRight: 0.14285715
+    paddingTop: 0.34615386
+    paddingBottom: 0.057692308
+  - name: gui_support_specialist
+    outer:
+      serializedVersion: 2
+      x: 72
+      y: 163
+      width: 35
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 72
+      y: 163
+      width: 35
+      height: 49
+    rotated: 0
+    paddingLeft: 0.14285715
+    paddingRight: 0.14285715
+    paddingTop: 0.4489796
+    paddingBottom: 0.040816326
+  - name: gui_demolition
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 148
+      width: 35
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 148
+      width: 35
+      height: 64
+    rotated: 0
+    paddingLeft: 0.14285715
+    paddingRight: 0.14285715
+    paddingTop: 0.09375
+    paddingBottom: 0.046875
+  - name: stats_bg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 522
+      width: 458
+      height: 502
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 522
+      width: 458
+      height: 502
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0.025896415
+  - name: locked
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 274
+      width: 177
+      height: 247
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 274
+      width: 177
+      height: 247
+    rotated: 0
+    paddingLeft: 0.050847456
+    paddingRight: 0.07909604
+    paddingTop: 0.012145749
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

@@ -1,0 +1,40 @@
+namespace Calamity.Input
+{
+	public enum InputAction
+	{
+		Movement = 0,
+		Rotation = 1,
+		Fire = 2,
+		FireSecondary = 3,
+		InventoryMelee = 4,
+		InventoryPistol = 5,
+		InventoryPrimary1 = 6,
+		InventoryPrimary2 = 7,
+		Reload = 8,
+		Aim = 9,
+		Grenade = 10,
+		Syringe = 11,
+		Dodge = 12,
+		Ability = 13,
+		ThrowMoney = 14,
+		NextWeapon = 15,
+		MenuForward = 16,
+		MenuBackward = 17,
+		MenuU = 18,
+		MenuY = 19,
+		MenuHorizontal = 20,
+		MenuVertical = 21,
+		MenuHorizontalAlternate = 22,
+		MenuVerticalAlternate = 23,
+		MenuBumperLeft = 24,
+		MenuBumperRight = 25,
+		Pause = 26,
+		DropMeleeWeapon = 27,
+		DropPistolWeapon = 28,
+		DropPrimary1Weapon = 29,
+		DropPrimary2Weapon = 30,
+		OpenWeaponTray = 31,
+		SkipSplashScreen = 32,
+		PreviousWeapon = 33
+	}
+}

@@ -1,0 +1,634 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1623423174184283}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1623423174184283
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4740435724265418}
+  - 114: {fileID: 114883261937402906}
+  m_Layer: 0
+  m_Name: End Screen Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4740435724265418
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623423174184283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114883261937402906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623423174184283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: 03396981a37d3ae46b8b7dc7437b185e, type: 2}
+  sprites:
+  - name: ABarFrame
+    outer:
+      serializedVersion: 2
+      x: 1059
+      y: 1607
+      width: 345
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 1059
+      y: 1607
+      width: 345
+      height: 67
+    rotated: 0
+    paddingLeft: 0.17391305
+    paddingRight: 0.19130434
+    paddingTop: 0.7910448
+    paddingBottom: 0.8955224
+  - name: ABarFill
+    outer:
+      serializedVersion: 2
+      x: 1899
+      y: 1877
+      width: 106
+      height: 41
+    inner:
+      serializedVersion: 2
+      x: 1899
+      y: 1877
+      width: 106
+      height: 41
+    rotated: 0
+    paddingLeft: 0.6886792
+    paddingRight: 0.745283
+    paddingTop: 1.6097561
+    paddingBottom: 1.7804878
+  - name: ABarBG
+    outer:
+      serializedVersion: 2
+      x: 1262
+      y: 1537
+      width: 319
+      height: 41
+    inner:
+      serializedVersion: 2
+      x: 1262
+      y: 1537
+      width: 319
+      height: 41
+    rotated: 0
+    paddingLeft: 0.22884013
+    paddingRight: 0.24764891
+    paddingTop: 1.6097561
+    paddingBottom: 1.7804878
+  - name: HeadlineBg
+    outer:
+      serializedVersion: 2
+      x: 1581
+      y: 1601
+      width: 304
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 1581
+      y: 1601
+      width: 304
+      height: 58
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: OAContinueSkipBg
+    outer:
+      serializedVersion: 2
+      x: 1581
+      y: 1660
+      width: 376
+      height: 181
+    inner:
+      serializedVersion: 2
+      x: 1581
+      y: 1660
+      width: 376
+      height: 181
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DifficultyLengthBg
+    outer:
+      serializedVersion: 2
+      x: 822
+      y: 1427
+      width: 439
+      height: 151
+    inner:
+      serializedVersion: 2
+      x: 822
+      y: 1427
+      width: 439
+      height: 151
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ScorescreenScoreRedBg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 712
+      width: 291
+      height: 336
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 712
+      width: 291
+      height: 336
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ScorescreenScorerGreenBg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 375
+      width: 291
+      height: 336
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 375
+      width: 291
+      height: 336
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ScorescreenScorerPurpleBg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 38
+      width: 291
+      height: 336
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 38
+      width: 291
+      height: 336
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ScorescreenScoreBlueBg
+    outer:
+      serializedVersion: 2
+      x: 530
+      y: 1242
+      width: 291
+      height: 336
+    inner:
+      serializedVersion: 2
+      x: 530
+      y: 1242
+      width: 291
+      height: 336
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VictoryBg
+    outer:
+      serializedVersion: 2
+      x: 1059
+      y: 1675
+      width: 521
+      height: 166
+    inner:
+      serializedVersion: 2
+      x: 1059
+      y: 1675
+      width: 521
+      height: 166
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: VictoryC
+    outer:
+      serializedVersion: 2
+      x: 456
+      y: 919
+      width: 69
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 456
+      y: 919
+      width: 69
+      height: 129
+    rotated: 0
+    paddingLeft: 0.942029
+    paddingRight: 0.95652175
+    paddingTop: 0.27131784
+    paddingBottom: 0.27906978
+  - name: VictoryY
+    outer:
+      serializedVersion: 2
+      x: 1810
+      y: 1919
+      width: 88
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 1810
+      y: 1919
+      width: 88
+      height: 129
+    rotated: 0
+    paddingLeft: 0.6363636
+    paddingRight: 0.6363636
+    paddingTop: 0.27131784
+    paddingBottom: 0.27906978
+  - name: VictoryI
+    outer:
+      serializedVersion: 2
+      x: 1983
+      y: 1919
+      width: 59
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 1983
+      y: 1919
+      width: 59
+      height: 129
+    rotated: 0
+    paddingLeft: 1.2033899
+    paddingRight: 1.1864407
+    paddingTop: 0.27906978
+    paddingBottom: 0.27131784
+  - name: VictoryT
+    outer:
+      serializedVersion: 2
+      x: 1899
+      y: 1919
+      width: 83
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 1899
+      y: 1919
+      width: 83
+      height: 129
+    rotated: 0
+    paddingLeft: 0.7108434
+    paddingRight: 0.6987952
+    paddingTop: 0.27131784
+    paddingBottom: 0.27906978
+  - name: VictoryV
+    outer:
+      serializedVersion: 2
+      x: 1958
+      y: 1712
+      width: 83
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 1958
+      y: 1712
+      width: 83
+      height: 129
+    rotated: 0
+    paddingLeft: 0.7108434
+    paddingRight: 0.6987952
+    paddingTop: 0.27131784
+    paddingBottom: 0.27906978
+  - name: VictoryO
+    outer:
+      serializedVersion: 2
+      x: 1958
+      y: 1582
+      width: 83
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 1958
+      y: 1582
+      width: 83
+      height: 129
+    rotated: 0
+    paddingLeft: 0.7108434
+    paddingRight: 0.6987952
+    paddingTop: 0.27131784
+    paddingBottom: 0.27906978
+  - name: VictoryR
+    outer:
+      serializedVersion: 2
+      x: 292
+      y: 919
+      width: 82
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 292
+      y: 919
+      width: 82
+      height: 129
+    rotated: 0
+    paddingLeft: 0.70731705
+    paddingRight: 0.73170733
+    paddingTop: 0.27131784
+    paddingBottom: 0.27906978
+  - name: ScorescreenScoreBg
+    outer:
+      serializedVersion: 2
+      x: 822
+      y: 1369
+      width: 307
+      height: 57
+    inner:
+      serializedVersion: 2
+      x: 822
+      y: 1369
+      width: 307
+      height: 57
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: AchivementsMedalBg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1579
+      width: 1058
+      height: 469
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1579
+      width: 1058
+      height: 469
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ABgDotGlow
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1049
+      width: 529
+      height: 529
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1049
+      width: 529
+      height: 529
+    rotated: 0
+    paddingLeft: 0.015122874
+    paddingRight: 0.011342155
+    paddingTop: 0.015122874
+    paddingBottom: 0.011342155
+  - name: EliminatedM
+    outer:
+      serializedVersion: 2
+      x: 375
+      y: 931
+      width: 80
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 375
+      y: 931
+      width: 80
+      height: 117
+    rotated: 0
+    paddingLeft: 1.1125
+    paddingRight: 1.0875
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedI2
+    outer:
+      serializedVersion: 2
+      x: 481
+      y: 594
+      width: 46
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 481
+      y: 594
+      width: 46
+      height: 117
+    rotated: 0
+    paddingLeft: 2.3043478
+    paddingRight: 2.2608695
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedN
+    outer:
+      serializedVersion: 2
+      x: 442
+      y: 801
+      width: 69
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 442
+      y: 801
+      width: 69
+      height: 117
+    rotated: 0
+    paddingLeft: 1.3768116
+    paddingRight: 1.3333334
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedD
+    outer:
+      serializedVersion: 2
+      x: 292
+      y: 594
+      width: 66
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 292
+      y: 594
+      width: 66
+      height: 117
+    rotated: 0
+    paddingLeft: 1.469697
+    paddingRight: 1.4090909
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedE
+    outer:
+      serializedVersion: 2
+      x: 359
+      y: 594
+      width: 60
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 359
+      y: 594
+      width: 60
+      height: 117
+    rotated: 0
+    paddingLeft: 1.65
+    paddingRight: 1.6166667
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedL
+    outer:
+      serializedVersion: 2
+      x: 420
+      y: 594
+      width: 60
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 420
+      y: 594
+      width: 60
+      height: 117
+    rotated: 0
+    paddingLeft: 1.6833333
+    paddingRight: 1.5833334
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedA
+    outer:
+      serializedVersion: 2
+      x: 292
+      y: 801
+      width: 78
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 292
+      y: 801
+      width: 78
+      height: 117
+    rotated: 0
+    paddingLeft: 1.1666666
+    paddingRight: 1.1153846
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedI
+    outer:
+      serializedVersion: 2
+      x: 353
+      y: 476
+      width: 46
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 353
+      y: 476
+      width: 46
+      height: 117
+    rotated: 0
+    paddingLeft: 2.326087
+    paddingRight: 2.2391305
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedBg
+    outer:
+      serializedVersion: 2
+      x: 1059
+      y: 1842
+      width: 750
+      height: 206
+    inner:
+      serializedVersion: 2
+      x: 1059
+      y: 1842
+      width: 750
+      height: 206
+    rotated: 0
+    paddingLeft: 0.34
+    paddingRight: 0.36666667
+    paddingTop: 0.8300971
+    paddingBottom: 1.6650486
+  - name: EliminatedE2
+    outer:
+      serializedVersion: 2
+      x: 292
+      y: 476
+      width: 60
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 292
+      y: 476
+      width: 60
+      height: 117
+    rotated: 0
+    paddingLeft: 1.65
+    paddingRight: 1.6166667
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  - name: EliminatedT
+    outer:
+      serializedVersion: 2
+      x: 371
+      y: 801
+      width: 70
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 371
+      y: 801
+      width: 70
+      height: 117
+    rotated: 0
+    paddingLeft: 1.3571428
+    paddingRight: 1.3
+    paddingTop: 0.60683763
+    paddingBottom: 0.5811966
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

@@ -1,0 +1,143 @@
+using UnityEngine;
+
+public class PS2Controller : OuyaControllerCommon, IOuyaController
+{
+	private readonly string[] m_supportedJoysticks = new string[1] { "USB CONTROLLER" };
+
+	public string[] GetSupportedJoysicks()
+	{
+		return m_supportedJoysticks;
+	}
+
+	public OuyaSDK.KeyEnum[] GetSupportedAxises()
+	{
+		return new OuyaSDK.KeyEnum[9]
+		{
+			OuyaSDK.KeyEnum.AXIS_LSTICK_X,
+			OuyaSDK.KeyEnum.AXIS_LSTICK_Y,
+			OuyaSDK.KeyEnum.AXIS_RSTICK_X,
+			OuyaSDK.KeyEnum.AXIS_RSTICK_Y,
+			OuyaSDK.KeyEnum.BUTTON_LT,
+			OuyaSDK.KeyEnum.BUTTON_DPAD_UP,
+			OuyaSDK.KeyEnum.BUTTON_DPAD_DOWN,
+			OuyaSDK.KeyEnum.BUTTON_DPAD_LEFT,
+			OuyaSDK.KeyEnum.BUTTON_DPAD_RIGHT
+		};
+	}
+
+	public OuyaSDK.KeyEnum[] GetSupportedButtons()
+	{
+		return new OuyaSDK.KeyEnum[10]
+		{
+			OuyaSDK.KeyEnum.BUTTON_LB,
+			OuyaSDK.KeyEnum.BUTTON_RB,
+			OuyaSDK.KeyEnum.BUTTON_O,
+			OuyaSDK.KeyEnum.BUTTON_U,
+			OuyaSDK.KeyEnum.BUTTON_Y,
+			OuyaSDK.KeyEnum.BUTTON_A,
+			OuyaSDK.KeyEnum.BUTTON_L3,
+			OuyaSDK.KeyEnum.BUTTON_R3,
+			OuyaSDK.KeyEnum.BUTTON_LT,
+			OuyaSDK.KeyEnum.BUTTON_RT
+		};
+	}
+
+	public bool HasAxis(OuyaSDK.KeyEnum keyCode)
+	{
+		OuyaSDK.KeyEnum[] supportedAxises = GetSupportedAxises();
+		return HasKeyCode(supportedAxises, keyCode);
+	}
+
+	public bool HasButton(OuyaSDK.KeyEnum keyCode)
+	{
+		OuyaSDK.KeyEnum[] supportedButtons = GetSupportedButtons();
+		return HasKeyCode(supportedButtons, keyCode);
+	}
+
+	public bool GetAxisInverted(OuyaSDK.KeyEnum keyCode)
+	{
+		switch (keyCode)
+		{
+		case OuyaSDK.KeyEnum.AXIS_LSTICK_X:
+			return false;
+		case OuyaSDK.KeyEnum.AXIS_LSTICK_Y:
+			return false;
+		case OuyaSDK.KeyEnum.AXIS_RSTICK_X:
+			return false;
+		case OuyaSDK.KeyEnum.AXIS_RSTICK_Y:
+			return false;
+		case OuyaSDK.KeyEnum.BUTTON_LT:
+			return false;
+		case OuyaSDK.KeyEnum.BUTTON_RT:
+			return false;
+		default:
+			return false;
+		}
+	}
+
+	public string GetUnityAxisName(OuyaSDK.KeyEnum keyCode, OuyaSDK.OuyaPlayer player)
+	{
+		switch (keyCode)
+		{
+		case OuyaSDK.KeyEnum.AXIS_LSTICK_X:
+			return string.Format("Joy{0} Axis 1", (int)player);
+		case OuyaSDK.KeyEnum.AXIS_LSTICK_Y:
+			return string.Format("Joy{0} Axis 2", (int)player);
+		case OuyaSDK.KeyEnum.AXIS_RSTICK_X:
+			return string.Format("Joy{0} Axis 3", (int)player);
+		case OuyaSDK.KeyEnum.AXIS_RSTICK_Y:
+			return string.Format("Joy{0} Axis 4", (int)player);
+		case OuyaSDK.KeyEnum.BUTTON_LT:
+			return string.Empty;
+		case OuyaSDK.KeyEnum.BUTTON_RT:
+			return string.Empty;
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_UP:
+			return string.Format("Joy{0} Axis 6", (int)player);
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_DOWN:
+			return string.Format("Joy{0} Axis 6", (int)player);
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_LEFT:
+			return string.Format("Joy{0} Axis 5", (int)player);
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_RIGHT:
+			return string.Format("Joy{0} Axis 5", (int)player);
+		default:
+			return string.Empty;
+		}
+	}
+
+	public KeyCode GetUnityKeyCode(OuyaSDK.KeyEnum keyCode, OuyaSDK.OuyaPlayer player)
+	{
+		switch (keyCode)
+		{
+		case OuyaSDK.KeyEnum.BUTTON_LB:
+			return CommonGetUnityKeyCode(4, player);
+		case OuyaSDK.KeyEnum.BUTTON_RB:
+			return CommonGetUnityKeyCode(5, player);
+		case OuyaSDK.KeyEnum.BUTTON_O:
+			return CommonGetUnityKeyCode(2, player);
+		case OuyaSDK.KeyEnum.BUTTON_U:
+			return CommonGetUnityKeyCode(3, player);
+		case OuyaSDK.KeyEnum.BUTTON_Y:
+			return CommonGetUnityKeyCode(0, player);
+		case OuyaSDK.KeyEnum.BUTTON_A:
+			return CommonGetUnityKeyCode(1, player);
+		case OuyaSDK.KeyEnum.BUTTON_L3:
+			return CommonGetUnityKeyCode(10, player);
+		case OuyaSDK.KeyEnum.BUTTON_R3:
+			return CommonGetUnityKeyCode(11, player);
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_UP:
+			return KeyCode.None;
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_DOWN:
+			return KeyCode.None;
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_LEFT:
+			return KeyCode.None;
+		case OuyaSDK.KeyEnum.BUTTON_DPAD_RIGHT:
+			return KeyCode.None;
+		case OuyaSDK.KeyEnum.BUTTON_LT:
+			return CommonGetUnityKeyCode(6, player);
+		case OuyaSDK.KeyEnum.BUTTON_RT:
+			return CommonGetUnityKeyCode(7, player);
+		default:
+			return KeyCode.None;
+		}
+	}
+}

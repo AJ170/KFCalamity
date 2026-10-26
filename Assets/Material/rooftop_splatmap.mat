@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: rooftop_splatmap
+  m_Shader: {fileID: 4800000, guid: 71ffedade244ee44ea46ac7600d9d183, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Tex_DiffuseA
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 30, y: 30}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_DiffuseB
+      second:
+        m_Texture: {fileID: 2800000, guid: 59030297e65909a45b8f621d5da61d39, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_DiffuseG
+      second:
+        m_Texture: {fileID: 2800000, guid: 7a65bee7a5395d548bd9c0810a18853d, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_DiffuseR
+      second:
+        m_Texture: {fileID: 2800000, guid: cf48067946c039a41948b467c68ffe3d, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_NormalA
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 30, y: 30}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_NormalB
+      second:
+        m_Texture: {fileID: 2800000, guid: 02ab5680bf51db04d9b656a5c9d65511, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_NormalG
+      second:
+        m_Texture: {fileID: 2800000, guid: bf048a81b9846294ab3ca0f55d8f304b, type: 3}
+        m_Scale: {x: 30, y: 30}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_NormalR
+      second:
+        m_Texture: {fileID: 2800000, guid: d4aef40bdece5e84983695cac6c9c35a, type: 3}
+        m_Scale: {x: 30, y: 30}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex_Splat
+      second:
+        m_Texture: {fileID: 2800000, guid: c6934e563186de843b253dbe21c5463d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BlendSoft
+      second: 1
+    - first:
+        name: _NScale
+      second: 4
+    - first:
+        name: _Shininess
+      second: 0.15
+    - first:
+        name: _Spec
+      second: 0.2
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}

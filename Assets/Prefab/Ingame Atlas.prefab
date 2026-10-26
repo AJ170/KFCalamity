@@ -1,0 +1,1624 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1421750060261712}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1421750060261712
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4581128123894038}
+  - 114: {fileID: 114481874009586380}
+  m_Layer: 0
+  m_Name: Ingame Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4581128123894038
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1421750060261712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114481874009586380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1421750060261712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: e09a6654bcd50a546936c2b702d98498, type: 2}
+  sprites:
+  - name: hud_abi_bg_p1
+    outer:
+      serializedVersion: 2
+      x: 362
+      y: 22
+      width: 92
+      height: 92
+    inner:
+      serializedVersion: 2
+      x: 362
+      y: 22
+      width: 92
+      height: 92
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_weapon_bg_p4
+    outer:
+      serializedVersion: 2
+      x: 659
+      y: 810
+      width: 78
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 659
+      y: 810
+      width: 78
+      height: 77
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_weapon_bg_p2
+    outer:
+      serializedVersion: 2
+      x: 580
+      y: 810
+      width: 78
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 580
+      y: 810
+      width: 78
+      height: 77
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_abi_bg_p4
+    outer:
+      serializedVersion: 2
+      x: 186
+      y: 10
+      width: 92
+      height: 92
+    inner:
+      serializedVersion: 2
+      x: 186
+      y: 10
+      width: 92
+      height: 92
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_weapon_bg_p3
+    outer:
+      serializedVersion: 2
+      x: 455
+      y: 810
+      width: 78
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 455
+      y: 810
+      width: 78
+      height: 77
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_wave_counter
+    outer:
+      serializedVersion: 2
+      x: 256
+      y: 804
+      width: 198
+      height: 83
+    inner:
+      serializedVersion: 2
+      x: 256
+      y: 804
+      width: 198
+      height: 83
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_secondary_grenade
+    outer:
+      serializedVersion: 2
+      x: 534
+      y: 815
+      width: 15
+      height: 15
+    inner:
+      serializedVersion: 2
+      x: 534
+      y: 815
+      width: 15
+      height: 15
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_abi_bg_p3
+    outer:
+      serializedVersion: 2
+      x: 710
+      y: 535
+      width: 92
+      height: 92
+    inner:
+      serializedVersion: 2
+      x: 710
+      y: 535
+      width: 92
+      height: 92
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_abi_bg_p2
+    outer:
+      serializedVersion: 2
+      x: 617
+      y: 535
+      width: 92
+      height: 92
+    inner:
+      serializedVersion: 2
+      x: 617
+      y: 535
+      width: 92
+      height: 92
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_main_ammo
+    outer:
+      serializedVersion: 2
+      x: 550
+      y: 816
+      width: 15
+      height: 14
+    inner:
+      serializedVersion: 2
+      x: 550
+      y: 816
+      width: 15
+      height: 14
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_secondary_medic
+    outer:
+      serializedVersion: 2
+      x: 882
+      y: 873
+      width: 14
+      height: 14
+    inner:
+      serializedVersion: 2
+      x: 882
+      y: 873
+      width: 14
+      height: 14
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: calamity font_0
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 803
+      width: 255
+      height: 221
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 803
+      width: 255
+      height: 221
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.003921569
+    paddingTop: 0
+    paddingBottom: 0.15837105
+  - name: hud_weapon_bg_p1
+    outer:
+      serializedVersion: 2
+      x: 738
+      y: 810
+      width: 78
+      height: 77
+    inner:
+      serializedVersion: 2
+      x: 738
+      y: 810
+      width: 78
+      height: 77
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_flare
+    outer:
+      serializedVersion: 2
+      x: 697
+      y: 399
+      width: 47
+      height: 45
+    inner:
+      serializedVersion: 2
+      x: 697
+      y: 399
+      width: 47
+      height: 45
+    rotated: 0
+    paddingLeft: 0.14893617
+    paddingRight: 0.21276596
+    paddingTop: 0.17777778
+    paddingBottom: 0.24444444
+  - name: ability_grenade
+    outer:
+      serializedVersion: 2
+      x: 746
+      y: 635
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 746
+      y: 635
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_turret
+    outer:
+      serializedVersion: 2
+      x: 803
+      y: 563
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 803
+      y: 563
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_zed_time
+    outer:
+      serializedVersion: 2
+      x: 624
+      y: 159
+      width: 44
+      height: 52
+    inner:
+      serializedVersion: 2
+      x: 624
+      y: 159
+      width: 44
+      height: 52
+    rotated: 0
+    paddingLeft: 0.22727273
+    paddingRight: 0.22727273
+    paddingTop: 0.13461539
+    paddingBottom: 0.09615385
+  - name: ability_rigged_decoy
+    outer:
+      serializedVersion: 2
+      x: 933
+      y: 563
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 933
+      y: 563
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_molotov
+    outer:
+      serializedVersion: 2
+      x: 534
+      y: 831
+      width: 42
+      height: 56
+    inner:
+      serializedVersion: 2
+      x: 534
+      y: 831
+      width: 42
+      height: 56
+    rotated: 0
+    paddingLeft: 0.26190478
+    paddingRight: 0.26190478
+    paddingTop: 0.05357143
+    paddingBottom: 0.08928572
+  - name: ability_syringe
+    outer:
+      serializedVersion: 2
+      x: 72
+      y: 28
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 72
+      y: 28
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_furious_roar
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 437
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 437
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_hurry
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 372
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 372
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_fire_at_will
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 307
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 307
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_dodge
+    outer:
+      serializedVersion: 2
+      x: 617
+      y: 502
+      width: 36
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 617
+      y: 502
+      width: 36
+      height: 32
+    rotated: 0
+    paddingLeft: 0.027777778
+    paddingRight: 0.083333336
+    paddingTop: 0.09375
+    paddingBottom: 0.15625
+  - name: ability_bg
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 2
+      width: 48
+      height: 47
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 2
+      width: 48
+      height: 47
+    rotated: 0
+    paddingLeft: 0.16666667
+    paddingRight: 0.16666667
+    paddingTop: 0.19148937
+    paddingBottom: 0.17021276
+  - name: grenade_syringe_bg
+    outer:
+      serializedVersion: 2
+      x: 455
+      y: 82
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 455
+      y: 82
+      width: 32
+      height: 32
+    rotated: 0
+    paddingLeft: 0.5
+    paddingRight: 0.5
+    paddingTop: 0.5
+    paddingBottom: 0.5
+  - name: weapon_dual_9mm
+    outer:
+      serializedVersion: 2
+      x: 865
+      y: 632
+      width: 67
+      height: 41
+    inner:
+      serializedVersion: 2
+      x: 865
+      y: 632
+      width: 67
+      height: 41
+    rotated: 0
+    paddingLeft: 0.43283582
+    paddingRight: 0.47761193
+    paddingTop: 1.0487804
+    paddingBottom: 1.0731708
+  - name: weapon_m79
+    outer:
+      serializedVersion: 2
+      x: 771
+      y: 446
+      width: 70
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 771
+      y: 446
+      width: 70
+      height: 55
+    rotated: 0
+    paddingLeft: 0.42857143
+    paddingRight: 0.4
+    paddingTop: 0.6363636
+    paddingBottom: 0.6909091
+  - name: weapon_aa12
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 387
+      width: 67
+      height: 57
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 387
+      width: 67
+      height: 57
+    rotated: 0
+    paddingLeft: 0.47761193
+    paddingRight: 0.43283582
+    paddingTop: 0.6315789
+    paddingBottom: 0.61403507
+  - name: weapon_dual_handcannons
+    outer:
+      serializedVersion: 2
+      x: 745
+      y: 404
+      width: 51
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 745
+      y: 404
+      width: 51
+      height: 40
+    rotated: 0
+    paddingLeft: 0.7254902
+    paddingRight: 0.78431374
+    paddingTop: 1.1
+    paddingBottom: 1.1
+  - name: weapon_ak47
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 90
+      width: 61
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 90
+      width: 61
+      height: 59
+    rotated: 0
+    paddingLeft: 0.57377046
+    paddingRight: 0.52459013
+    paddingTop: 0.5762712
+    paddingBottom: 0.59322035
+  - name: weapon_mp5m
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 112
+      width: 58
+      height: 66
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 112
+      width: 58
+      height: 66
+    rotated: 0
+    paddingLeft: 0.62068963
+    paddingRight: 0.5862069
+    paddingTop: 0.46969697
+    paddingBottom: 0.46969697
+  - name: weapon_m32
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 242
+      width: 63
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 242
+      width: 63
+      height: 64
+    rotated: 0
+    paddingLeft: 0.5555556
+    paddingRight: 0.47619048
+    paddingTop: 0.484375
+    paddingBottom: 0.515625
+  - name: weapon_chainsaw
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 34
+      width: 65
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 34
+      width: 65
+      height: 55
+    rotated: 0
+    paddingLeft: 0.46153846
+    paddingRight: 0.50769234
+    paddingTop: 0.6909091
+    paddingBottom: 0.6363636
+  - name: weapon_combat_shotgun
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 50
+      width: 62
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 50
+      width: 62
+      height: 61
+    rotated: 0
+    paddingLeft: 0.5322581
+    paddingRight: 0.5322581
+    paddingTop: 0.55737704
+    paddingBottom: 0.5409836
+  - name: weapon_flame_thrower
+    outer:
+      serializedVersion: 2
+      x: 933
+      y: 502
+      width: 67
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 933
+      y: 502
+      width: 67
+      height: 60
+    rotated: 0
+    paddingLeft: 0.49253732
+    paddingRight: 0.41791046
+    paddingTop: 0.5833333
+    paddingBottom: 0.55
+  - name: weapon_scar
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 329
+      width: 67
+      height: 57
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 329
+      width: 67
+      height: 57
+    rotated: 0
+    paddingLeft: 0.46268657
+    paddingRight: 0.4477612
+    paddingTop: 0.64912283
+    paddingBottom: 0.5964912
+  - name: weapon_claymore
+    outer:
+      serializedVersion: 2
+      x: 739
+      y: 339
+      width: 63
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 739
+      y: 339
+      width: 63
+      height: 54
+    rotated: 0
+    paddingLeft: 0.50793654
+    paddingRight: 0.52380955
+    paddingTop: 0.6851852
+    paddingBottom: 0.6851852
+  - name: weapon_crossbow
+    outer:
+      serializedVersion: 2
+      x: 279
+      y: 2
+      width: 79
+      height: 35
+    inner:
+      serializedVersion: 2
+      x: 279
+      y: 2
+      width: 79
+      height: 35
+    rotated: 0
+    paddingLeft: 0.30379745
+    paddingRight: 0.3164557
+    paddingTop: 1.3428571
+    paddingBottom: 1.3142858
+  - name: weapon_machete
+    outer:
+      serializedVersion: 2
+      x: 868
+      y: 503
+      width: 64
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 868
+      y: 503
+      width: 64
+      height: 59
+    rotated: 0
+    paddingLeft: 0.5
+    paddingRight: 0.5
+    paddingTop: 0.55932206
+    paddingBottom: 0.6101695
+  - name: weapon_axe
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 445
+      width: 70
+      height: 56
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 445
+      width: 70
+      height: 56
+    rotated: 0
+    paddingLeft: 0.3857143
+    paddingRight: 0.44285715
+    paddingTop: 0.60714287
+    paddingBottom: 0.6785714
+  - name: weapon_m4
+    outer:
+      serializedVersion: 2
+      x: 842
+      y: 447
+      width: 69
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 842
+      y: 447
+      width: 69
+      height: 54
+    rotated: 0
+    paddingLeft: 0.44927537
+    paddingRight: 0.4057971
+    paddingTop: 0.7037037
+    paddingBottom: 0.6666667
+  - name: weapon_m14
+    outer:
+      serializedVersion: 2
+      x: 912
+      y: 446
+      width: 67
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 912
+      y: 446
+      width: 67
+      height: 55
+    rotated: 0
+    paddingLeft: 0.4477612
+    paddingRight: 0.46268657
+    paddingTop: 0.6727273
+    paddingBottom: 0.6545454
+  - name: weapon_winchester
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 179
+      width: 62
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 179
+      width: 62
+      height: 62
+    rotated: 0
+    paddingLeft: 0.5322581
+    paddingRight: 0.5322581
+    paddingTop: 0.5322581
+    paddingBottom: 0.5322581
+  - name: weapon_handcannon
+    outer:
+      serializedVersion: 2
+      x: 624
+      y: 268
+      width: 56
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 624
+      y: 268
+      width: 56
+      height: 61
+    rotated: 0
+    paddingLeft: 0.66071427
+    paddingRight: 0.625
+    paddingTop: 0.59016395
+    paddingBottom: 0.5081967
+  - name: weapon_hunting_shotgun
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 269
+      width: 64
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 269
+      width: 64
+      height: 59
+    rotated: 0
+    paddingLeft: 0.515625
+    paddingRight: 0.484375
+    paddingTop: 0.59322035
+    paddingBottom: 0.5762712
+  - name: weapon_knife
+    outer:
+      serializedVersion: 2
+      x: 681
+      y: 333
+      width: 57
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 681
+      y: 333
+      width: 57
+      height: 60
+    rotated: 0
+    paddingLeft: 0.6315789
+    paddingRight: 0.61403507
+    paddingTop: 0.56666666
+    paddingBottom: 0.56666666
+  - name: weapon_katana
+    outer:
+      serializedVersion: 2
+      x: 803
+      y: 340
+      width: 63
+      height: 53
+    inner:
+      serializedVersion: 2
+      x: 803
+      y: 340
+      width: 63
+      height: 53
+    rotated: 0
+    paddingLeft: 0.52380955
+    paddingRight: 0.50793654
+    paddingTop: 0.6981132
+    paddingBottom: 0.7169811
+  - name: weapon_9mm
+    outer:
+      serializedVersion: 2
+      x: 811
+      y: 642
+      width: 51
+      height: 57
+    inner:
+      serializedVersion: 2
+      x: 811
+      y: 642
+      width: 51
+      height: 57
+    rotated: 0
+    paddingLeft: 0.8039216
+    paddingRight: 0.7058824
+    paddingTop: 0.64912283
+    paddingBottom: 0.5964912
+  - name: weapon_law
+    outer:
+      serializedVersion: 2
+      x: 627
+      y: 446
+      width: 71
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 627
+      y: 446
+      width: 71
+      height: 55
+    rotated: 0
+    paddingLeft: 0.4225352
+    paddingRight: 0.3802817
+    paddingTop: 0.6181818
+    paddingBottom: 0.7090909
+  - name: weapon_mp7m
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 31
+      width: 71
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 31
+      width: 71
+      height: 61
+    rotated: 0
+    paddingLeft: 0.3802817
+    paddingRight: 0.4225352
+    paddingTop: 0.55737704
+    paddingBottom: 0.5409836
+  - name: weapon_mac_10
+    outer:
+      serializedVersion: 2
+      x: 624
+      y: 212
+      width: 56
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 624
+      y: 212
+      width: 56
+      height: 55
+    rotated: 0
+    paddingLeft: 0.6785714
+    paddingRight: 0.60714287
+    paddingTop: 0.6909091
+    paddingBottom: 0.6363636
+  - name: weapon_dual_revolver
+    outer:
+      serializedVersion: 2
+      x: 933
+      y: 632
+      width: 61
+      height: 41
+    inner:
+      serializedVersion: 2
+      x: 933
+      y: 632
+      width: 61
+      height: 41
+    rotated: 0
+    paddingLeft: 0.52459013
+    paddingRight: 0.57377046
+    paddingTop: 1.0731708
+    paddingBottom: 1.0487804
+  - name: weapon_m4_203
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 150
+      width: 66
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 150
+      width: 66
+      height: 55
+    rotated: 0
+    paddingLeft: 0.5
+    paddingRight: 0.43939394
+    paddingTop: 0.6727273
+    paddingBottom: 0.6545454
+  - name: weapon_revolver
+    outer:
+      serializedVersion: 2
+      x: 137
+      y: 27
+      width: 47
+      height: 65
+    inner:
+      serializedVersion: 2
+      x: 137
+      y: 27
+      width: 47
+      height: 65
+    rotated: 0
+    paddingLeft: 0.85106385
+    paddingRight: 0.87234044
+    paddingTop: 0.4923077
+    paddingBottom: 0.47692308
+  - name: weapon_shotgun
+    outer:
+      serializedVersion: 2
+      x: 556
+      y: 206
+      width: 59
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 556
+      y: 206
+      width: 59
+      height: 62
+    rotated: 0
+    paddingLeft: 0.5762712
+    paddingRight: 0.59322035
+    paddingTop: 0.5483871
+    paddingBottom: 0.516129
+  - name: weapon_bullpup
+    outer:
+      serializedVersion: 2
+      x: 699
+      y: 446
+      width: 71
+      height: 55
+    inner:
+      serializedVersion: 2
+      x: 699
+      y: 446
+      width: 71
+      height: 55
+    rotated: 0
+    paddingLeft: 0.45070422
+    paddingRight: 0.35211268
+    paddingTop: 0.6363636
+    paddingBottom: 0.6909091
+  - name: weapon_huskgun
+    outer:
+      serializedVersion: 2
+      x: 624
+      y: 394
+      width: 72
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 624
+      y: 394
+      width: 72
+      height: 50
+    rotated: 0
+    paddingLeft: 0.375
+    paddingRight: 0.4027778
+    paddingTop: 0.76
+    paddingBottom: 0.8
+  - name: weapon_slot_empty
+    outer:
+      serializedVersion: 2
+      x: 865
+      y: 674
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 865
+      y: 674
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapon_slot_selected
+    outer:
+      serializedVersion: 2
+      x: 362
+      y: 499
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 362
+      y: 499
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapon_slot_passive
+    outer:
+      serializedVersion: 2
+      x: 362
+      y: 241
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 362
+      y: 241
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_bg
+    outer:
+      serializedVersion: 2
+      x: 580
+      y: 888
+      width: 323
+      height: 136
+    inner:
+      serializedVersion: 2
+      x: 580
+      y: 888
+      width: 323
+      height: 136
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_killstreak_bg
+    outer:
+      serializedVersion: 2
+      x: 681
+      y: 700
+      width: 183
+      height: 102
+    inner:
+      serializedVersion: 2
+      x: 681
+      y: 700
+      width: 183
+      height: 102
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_grenade_syringe_bg_cd
+    outer:
+      serializedVersion: 2
+      x: 797
+      y: 405
+      width: 39
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 797
+      y: 405
+      width: 39
+      height: 39
+    rotated: 0
+    paddingLeft: 0.33333334
+    paddingRight: 0.30769232
+    paddingTop: 0.33333334
+    paddingBottom: 0.30769232
+  - name: hud_player_dead
+    outer:
+      serializedVersion: 2
+      x: 817
+      y: 811
+      width: 64
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 817
+      y: 811
+      width: 64
+      height: 76
+    rotated: 0
+    paddingLeft: 0.109375
+    paddingRight: 0.109375
+    paddingTop: 0.013157895
+    paddingBottom: 0
+  - name: weapon_golden_ak47
+    outer:
+      serializedVersion: 2
+      x: 624
+      y: 330
+      width: 56
+      height: 63
+    inner:
+      serializedVersion: 2
+      x: 624
+      y: 330
+      width: 56
+      height: 63
+    rotated: 0
+    paddingLeft: 0.64285713
+    paddingRight: 0.64285713
+    paddingTop: 0.52380955
+    paddingBottom: 0.50793654
+  - name: weapon_dual_mac_10
+    outer:
+      serializedVersion: 2
+      x: 803
+      y: 502
+      width: 63
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 803
+      y: 502
+      width: 63
+      height: 60
+    rotated: 0
+    paddingLeft: 0.50793654
+    paddingRight: 0.52380955
+    paddingTop: 0.56666666
+    paddingBottom: 0.56666666
+  - name: ability_last_stand
+    outer:
+      serializedVersion: 2
+      x: 279
+      y: 38
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 279
+      y: 38
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_flame_turret
+    outer:
+      serializedVersion: 2
+      x: 681
+      y: 635
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 681
+      y: 635
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ability_ready
+    outer:
+      serializedVersion: 2
+      x: 868
+      y: 563
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 868
+      y: 563
+      width: 64
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_ability_used
+    outer:
+      serializedVersion: 2
+      x: 980
+      y: 459
+      width: 42
+      height: 42
+    inner:
+      serializedVersion: 2
+      x: 980
+      y: 459
+      width: 42
+      height: 42
+    rotated: 0
+    paddingLeft: 0.26190478
+    paddingRight: 0.26190478
+    paddingTop: 0.26190478
+    paddingBottom: 0.26190478
+  - name: hud_bg_damaged
+    outer:
+      serializedVersion: 2
+      x: 256
+      y: 888
+      width: 323
+      height: 136
+    inner:
+      serializedVersion: 2
+      x: 256
+      y: 888
+      width: 323
+      height: 136
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: weapons_switch_feedback
+    outer:
+      serializedVersion: 2
+      x: 362
+      y: 370
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 362
+      y: 370
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_button_bg_pressed
+    outer:
+      serializedVersion: 2
+      x: 362
+      y: 115
+      width: 125
+      height: 125
+    inner:
+      serializedVersion: 2
+      x: 362
+      y: 115
+      width: 125
+      height: 125
+    rotated: 0
+    paddingLeft: 0.024
+    paddingRight: 0
+    paddingTop: 0.024
+    paddingBottom: 0
+  - name: hud_button_bg
+    outer:
+      serializedVersion: 2
+      x: 491
+      y: 502
+      width: 125
+      height: 125
+    inner:
+      serializedVersion: 2
+      x: 491
+      y: 502
+      width: 125
+      height: 125
+    rotated: 0
+    paddingLeft: 0.024
+    paddingRight: 0
+    paddingTop: 0.024
+    paddingBottom: 0
+  - name: joystick_child
+    outer:
+      serializedVersion: 2
+      x: 537
+      y: 659
+      width: 143
+      height: 143
+    inner:
+      serializedVersion: 2
+      x: 537
+      y: 659
+      width: 143
+      height: 143
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: headshot_aim_activated
+    outer:
+      serializedVersion: 2
+      x: 186
+      y: 628
+      width: 175
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 186
+      y: 628
+      width: 175
+      height: 174
+    rotated: 0
+    paddingLeft: 0.074285716
+    paddingRight: 0.068571426
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: joystick
+    outer:
+      serializedVersion: 2
+      x: 904
+      y: 916
+      width: 108
+      height: 108
+    inner:
+      serializedVersion: 2
+      x: 904
+      y: 916
+      width: 108
+      height: 108
+    rotated: 0
+    paddingLeft: 0.42592594
+    paddingRight: 0.42592594
+    paddingTop: 0.42592594
+    paddingBottom: 0.42592594
+  - name: autofire_activated
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 618
+      width: 185
+      height: 184
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 618
+      width: 185
+      height: 184
+    rotated: 0
+    paddingLeft: 0.043243244
+    paddingRight: 0.037837837
+    paddingTop: 0.04347826
+    paddingBottom: 0.04347826
+  - name: aim_activated
+    outer:
+      serializedVersion: 2
+      x: 362
+      y: 628
+      width: 174
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 362
+      y: 628
+      width: 174
+      height: 174
+    rotated: 0
+    paddingLeft: 0.08045977
+    paddingRight: 0.06896552
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: unselected
+    outer:
+      serializedVersion: 2
+      x: 186
+      y: 453
+      width: 174
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 186
+      y: 453
+      width: 174
+      height: 174
+    rotated: 0
+    paddingLeft: 0.08045977
+    paddingRight: 0.06896552
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: aim_active
+    outer:
+      serializedVersion: 2
+      x: 186
+      y: 278
+      width: 174
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 186
+      y: 278
+      width: 174
+      height: 174
+    rotated: 0
+    paddingLeft: 0.08045977
+    paddingRight: 0.06896552
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: autofire_active
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 443
+      width: 175
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 443
+      width: 175
+      height: 174
+    rotated: 0
+    paddingLeft: 0.074285716
+    paddingRight: 0.068571426
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: headshot_aim_active
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 268
+      width: 175
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 268
+      width: 175
+      height: 174
+    rotated: 0
+    paddingLeft: 0.074285716
+    paddingRight: 0.068571426
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: movement_joystick_selected
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 93
+      width: 175
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 93
+      width: 175
+      height: 174
+    rotated: 0
+    paddingLeft: 0.074285716
+    paddingRight: 0.068571426
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: movement_joystick_unselected
+    outer:
+      serializedVersion: 2
+      x: 186
+      y: 103
+      width: 174
+      height: 174
+    inner:
+      serializedVersion: 2
+      x: 186
+      y: 103
+      width: 174
+      height: 174
+    rotated: 0
+    paddingLeft: 0.08045977
+    paddingRight: 0.06896552
+    paddingTop: 0.07471264
+    paddingBottom: 0.07471264
+  - name: button_moveable_bg
+    outer:
+      serializedVersion: 2
+      x: 904
+      y: 815
+      width: 100
+      height: 100
+    inner:
+      serializedVersion: 2
+      x: 904
+      y: 815
+      width: 100
+      height: 100
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

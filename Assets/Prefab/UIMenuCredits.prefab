@@ -1,0 +1,609 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1456028574425998}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1456028574425998
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4334928482778860}
+  - 114: {fileID: 114747108855167086}
+  - 114: {fileID: 114273541795888769}
+  - 114: {fileID: 114739444283282220}
+  - 114: {fileID: 114033576029184030}
+  m_Layer: 5
+  m_Name: UIMenuCredits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4334928482778860
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456028574425998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4036305306042711}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114747108855167086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456028574425998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3518b881abb6aa56c98a87c7c152497, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  EntryPrefab: {fileID: 1900785766469272, guid: 58cf1ce205fcea54cbe59373375f9f1e, type: 2}
+  Alpha: {fileID: 114033576029184030}
+  CreditList:
+  - UseTitle: 1
+    UsePosition: 0
+    Position:
+    Names: []
+  - UseTitle: 1
+    UsePosition: 0
+    Position:
+    Names:
+    - John Gibson - President
+    - Alan Wilson - Vice President
+  - UseTitle: 0
+    UsePosition: 1
+    Position: VISUAL ART
+    Names:
+    - Louice Adler - Graphic Design
+  - UseTitle: 0
+    UsePosition: 1
+    Position: AUDIO
+    Names:
+    - JB Blanc - Voice Talent
+    - Rawly Pickens - Recording Engineer
+    - Chris Rickwood - Voice Direction
+  - UseTitle: 0
+    UsePosition: 1
+    Position: PRODUCTION
+    Names:
+    - Thomas Dahlberg - Associate Producer
+  - UseTitle: 0
+    UsePosition: 1
+    Position: QUALITY ASSURANCE
+    Names:
+    - Sean Manzano - QA Manager
+    - James LaMarr - Senior QA Tester
+    - David Goldfarb
+    - Cody Owens
+    - Donal Gordon
+    - Jonathan Betancourt
+    - Nicholas Hull
+    - Alan Dykes
+    - Kyrie Himebrook
+  - UseTitle: 0
+    UsePosition: 1
+    Position: CORPORATE OPERATIONS
+    Names:
+    - Mike Schmitt - Senior Marketing Manager
+    - Jared Creasy - Community Manager
+    - Sandy DiCocco - Chief Administrative Officer
+    - Amanda Harrison - Accounting
+  - UseTitle: 0
+    UsePosition: 0
+    Position:
+    Names:
+    - 
+  - UseTitle: 1
+    UsePosition: 0
+    Position:
+    Names: []
+  - UseTitle: 1
+    UsePosition: 0
+    Position:
+    Names:
+    - Robin Flodin - Studio Manager
+    - Rasmus Davidsson - Lead Designer
+  - UseTitle: 0
+    UsePosition: 1
+    Position: LEVEL DESIGN
+    Names:
+    - Ludwig Sjöstedt
+    - Lars-Eric Mölleryd
+    - Johannes Wadin
+  - UseTitle: 0
+    UsePosition: 1
+    Position: PROGRAMMING
+    Names:
+    - Ted Löfgren
+    - Fredrik Nes Sjodin
+    - Jonas Täng
+    - Elias Stolt
+    - Niklas Blidfors
+  - UseTitle: 0
+    UsePosition: 1
+    Position: ART
+    Names:
+    - Tobias Andersen - Technical Artist
+    - Christoffer Akterin - Technical Artist
+    - Lars-Eric Möllryd
+    - Hannah Idén Gustafsson
+    - Patrik Robertsson
+  - UseTitle: 0
+    UsePosition: 1
+    Position: PRODUCTION
+    Names:
+    - Rasmus Davidsson - Producer
+    - Sebastian Thorwaldsson - Producer
+    - Ola Nilsson - Producer
+  - UseTitle: 0
+    UsePosition: 1
+    Position: FONT
+    Names:
+    - Share TechMono by Ralph Oliver du Carrois
+  - UseTitle: 1
+    UsePosition: 0
+    Position:
+    Names: []
+  - UseTitle: 1
+    UsePosition: 0
+    Position:
+    Names: []
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Tripwire Interactive
+    Names:
+    - 'President: John Gibson'
+    - 'Vice President: Alan Wilson'
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Original Killing Floor Mod Concept
+    Names:
+    - Alex Quick
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Art
+    Names:
+    - William T Munk II - Art Animation Direction
+    - David Hensley - Art Direction / Senior Artist
+    - Leland Scali - Lead Environment Artist
+    - Rob Dion - Lead Weapon Artist
+    - Byron Stiles
+    - Aaron Ault
+    - Louice Adler
+    - Andrew Quintilliani
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Animation
+    Names:
+    - William T Munk II - Animation Director
+    - Mike Munk
+    - Justin Knapich
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Graphic Design, Interface and Concept Art
+    Names:
+    - Leland Scali
+    - David Hensley
+    - Alex Quick
+    - Dan Nassick
+    - Base 02 Font provided by Clément Nicolle, http://www.stereo-type.net/
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Character Art
+    Names:
+    - David Hensley - Lead Character Artist
+    - George Baker - Soldier Texture Artist
+    - Alex Quick - Specimen Texture Artist
+    - Leland Scali - Trader Model
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Weapon Art
+    Names:
+    - Rob Dion - Lead Weapon Artist
+    - Nikolas Sumnall
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Environmental Art
+    Names:
+    - Leland Scali - Lead Environmental Artist
+    - Alex Quick
+    - Myles Lambert
+    - David Hensley
+    - Rob Dion
+  - UseTitle: 0
+    UsePosition: 1
+    Position: FX Art
+    Names:
+    - David Hensley
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Sound Design
+    Names:
+    - Dan Nassick
+    - Andreas Almström
+    - Leland Scali
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Music
+    Names:
+    - Dan Nassick
+    - Dirge (John Gibson, Jacob Graff, Dustinn Lowery)
+    - Marcus Matula
+  - UseTitle: 0
+    UsePosition: 1
+    Position: Voice Acting
+    Names:
+    - Mark Hayler
+    - Alan Wilson
+  Titles:
+  - 'TRIPWIRE INTERACTIVE PRESENTS KILLING FLOOR: CALAMITY'
+  - TRIPWIRE INTERACTIVE CALAMITY TEAM
+  - KILLING FLOOR CALAMITY WAS DEVELOPED BY TOADMAN INTERACTIVE
+  - TOADMAN INTERACTIVE CALAMITY TEAM
+  - 'Killing Floor: Calamity is based on the Tripwire Interactive game, Killing Floor'
+  - Killing Floor Credits
+  TitleFont: {fileID: 114300264146726669, guid: f5d8df2172347794289ee12006274db7, type: 2}
+--- !u!114 &114273541795888769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456028574425998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c722ca22a3d5957fc4b23ee95ee892, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  uiCamera: {fileID: 0}
+  widgetContainer: {fileID: 0}
+  panelContainer: {fileID: 0}
+  side: 8
+  halfPixelOffset: 1
+  relativeOffset: {x: 0, y: 0}
+--- !u!114 &114739444283282220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456028574425998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7c3bff608434c7f74859fbc7af5fe1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  showInPanelTool: 1
+  generateNormals: 0
+  depthPass: 0
+  widgetsAreStatic: 0
+  mAlpha: 1
+  mDebugInfo: 0
+  mClipping: 0
+  mClipRange: {x: 0, y: 0, z: 0, w: 0}
+  mClipSoftness: {x: 40, y: 40}
+--- !u!114 &114033576029184030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456028574425998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4bfc2619942a3175168338dfc77174, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  method: 2
+  style: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: 0.2
+  steeperCurves: 0
+  tweenGroup: 0
+  eventReceiver: {fileID: 1456028574425998}
+  callWhenFinished:
+  from: 0
+  to: 1
+--- !u!1 &1816166746834868
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4036305306042711}
+  - 114: {fileID: 114574432665205424}
+  m_Layer: 5
+  m_Name: elements
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4036305306042711
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816166746834868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4579398454514542}
+  - {fileID: 4085464744427153}
+  - {fileID: 4346929004171876}
+  m_Father: {fileID: 4334928482778860}
+  m_RootOrder: 0
+--- !u!114 &114574432665205424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816166746834868}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4bfc2619942a3175168338dfc77174, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  method: 2
+  style: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: 0.2
+  steeperCurves: 0
+  tweenGroup: 0
+  eventReceiver: {fileID: 1456028574425998}
+  callWhenFinished:
+  from: 0
+  to: 1
+--- !u!1 &1651849763907666
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4579398454514542}
+  - 114: {fileID: 114425247347861315}
+  - 114: {fileID: 114918289420650409}
+  m_Layer: 5
+  m_Name: Sprite (press_start_bg_players_zeds)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4579398454514542
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651849763907666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1280, y: 415.00003, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4036305306042711}
+  m_RootOrder: 0
+--- !u!114 &114425247347861315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651849763907666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e06f2b3004ef49fbd246cf009de50d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mMat: {fileID: 2100000, guid: 3eeb54db8a2766643a9bc0c5daab9b6e, type: 2}
+  mTex: {fileID: 2800000, guid: 0b5698ac7817d8b4f819b916e3868252, type: 3}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mDepth: 0
+  mAtlas: {fileID: 114468354272410140, guid: f389805a93f299b47a00f1202b6d4bd5, type: 2}
+  mSpriteName: press_start_bg_players_zeds
+  mFillCenter: 1
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+--- !u!114 &114918289420650409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651849763907666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9b4ee30c7319ae5bd4d3851bdc4057, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  method: 0
+  style: 1
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1.1920929E-07
+      inSlope: 2.7032466
+      outSlope: 2.7032466
+      tangentMode: 0
+    - time: 0.5007375
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1.1920929E-07
+      inSlope: -2.7238424
+      outSlope: -2.7238424
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: 12
+  steeperCurves: 0
+  tweenGroup: 0
+  eventReceiver: {fileID: 0}
+  callWhenFinished:
+  from: {x: 1280, y: 415, z: 1}
+  to: {x: 1310, y: 425, z: 1}
+  updateTable: 0
+--- !u!1 &1943673660842889
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4085464744427153}
+  - 114: {fileID: 114554469843738280}
+  m_Layer: 5
+  m_Name: Sprite (press_start_black_bg_2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4085464744427153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943673660842889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1600, y: 900, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4036305306042711}
+  m_RootOrder: 1
+--- !u!114 &114554469843738280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943673660842889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e06f2b3004ef49fbd246cf009de50d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mMat: {fileID: 2100000, guid: 3eeb54db8a2766643a9bc0c5daab9b6e, type: 2}
+  mTex: {fileID: 2800000, guid: 0b5698ac7817d8b4f819b916e3868252, type: 3}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mDepth: -1
+  mAtlas: {fileID: 114468354272410140, guid: f389805a93f299b47a00f1202b6d4bd5, type: 2}
+  mSpriteName: press_start_black_bg_2
+  mFillCenter: 1
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+--- !u!1 &1641301054927891
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4346929004171876}
+  - 114: {fileID: 114137465910801765}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4346929004171876
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641301054927891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 261, z: 0}
+  m_LocalScale: {x: 36, y: 36, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4036305306042711}
+  m_RootOrder: 2
+--- !u!114 &114137465910801765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641301054927891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848282c0978acd885155e93949b74925, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mMat: {fileID: 2100000, guid: d6b05f979f4c99c45ac1ad9df0989293, type: 2}
+  mTex: {fileID: 0}
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mDepth: 1
+  mFont: {fileID: 114742779691204408, guid: 715675f7f60225e44b83c477bb5d0a5f, type: 2}
+  mText:
+  mMaxLineWidth: 0
+  mEncoding: 1
+  mMaxLineCount: 0
+  mPassword: 0
+  mShowLastChar: 0
+  mEffectStyle: 2
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mSymbols: 1
+  mEffectDistance: {x: 1, y: 1}
+  mShrinkToFit: 0
+  mLineWidth: 0
+  mMultiline: 1

@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1127677587773766}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1127677587773766
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4967216689850305}
+  - 114: {fileID: 114741200833794793}
+  m_Layer: 0
+  m_Name: Splash Screen Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4967216689850305
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127677587773766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114741200833794793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127677587773766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: 9ca9bdd4406790c48aa74b21d3f8f76f, type: 2}
+  sprites:
+  - name: start_screen_middle_hero
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 404
+      width: 400
+      height: 400
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 404
+      width: 400
+      height: 400
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: start_screen_back_hero
+    outer:
+      serializedVersion: 2
+      x: 1281
+      y: 1104
+      width: 218
+      height: 223
+    inner:
+      serializedVersion: 2
+      x: 1281
+      y: 1104
+      width: 218
+      height: 223
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: start_screen_middle_enemy
+    outer:
+      serializedVersion: 2
+      x: 1281
+      y: 1630
+      width: 420
+      height: 418
+    inner:
+      serializedVersion: 2
+      x: 1281
+      y: 1630
+      width: 420
+      height: 418
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: start_screen_fog_middle_backlayer
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 936
+      width: 1280
+      height: 391
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 936
+      width: 1280
+      height: 391
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.8414322
+    paddingBottom: 0
+  - name: start_screen_front_hero
+    outer:
+      serializedVersion: 2
+      x: 1702
+      y: 1731
+      width: 325
+      height: 317
+    inner:
+      serializedVersion: 2
+      x: 1702
+      y: 1731
+      width: 325
+      height: 317
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: start_screen_back_enemy
+    outer:
+      serializedVersion: 2
+      x: 1281
+      y: 1436
+      width: 297
+      height: 193
+    inner:
+      serializedVersion: 2
+      x: 1281
+      y: 1436
+      width: 297
+      height: 193
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: start_screen_fog_bg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1328
+      width: 1280
+      height: 720
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1328
+      width: 1280
+      height: 720
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: start_screen_fog_front_backlayer
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 805
+      width: 1280
+      height: 130
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 805
+      width: 1280
+      height: 130
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4.5384617
+    paddingBottom: 0
+  - name: start_screen_front_enemy
+    outer:
+      serializedVersion: 2
+      x: 1702
+      y: 1426
+      width: 231
+      height: 304
+    inner:
+      serializedVersion: 2
+      x: 1702
+      y: 1426
+      width: 231
+      height: 304
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
