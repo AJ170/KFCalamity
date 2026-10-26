@@ -276,6 +276,14 @@ public class GA_Settings : ScriptableObject
 
 	public IEnumerator CheckInternetConnectivity(bool startQueue)
 	{
+		// (PS Vita port) GameAnalytics sends nothing without the Android advertising ID, and AddUniqueIDs below indexes
+		// the words of SystemInfo.operatingSystem in the Android format: other systems' names threw in the editor and
+		// crashed IL2CPP's String.Split natively on the Vita (second Vita build, main thread at the title screen)
+		if (!KFCompat.IsAndroid)
+		{
+			InternetConnectivity = false;
+			yield break;
+		}
 		if (Application.internetReachability == NetworkReachability.ReachableViaCarrierDataNetwork && !GA.SettingsGA.AllowRoaming)
 		{
 			InternetConnectivity = false;

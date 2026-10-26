@@ -276,7 +276,7 @@ public class UIFont : MonoBehaviour
 					mUVRect = mSprite.outer;
 					if (mAtlas.coordinates == UIAtlas.Coordinates.Pixels)
 					{
-						mUVRect = NGUIMath.ConvertToTexCoords(mUVRect, texture.width, texture.height);
+						mUVRect = NGUIMath.ConvertToTexCoords(mUVRect, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture));
 					}
 					if (mSprite.hasPadding)
 					{
@@ -545,8 +545,8 @@ public class UIFont : MonoBehaviour
 		Texture texture = mAtlas.texture;
 		if (texture != null && mSprite != null)
 		{
-			Rect rect = NGUIMath.ConvertToPixels(mUVRect, this.texture.width, this.texture.height, true);
-			Rect rect2 = ((mAtlas.coordinates != UIAtlas.Coordinates.TexCoords) ? mSprite.outer : NGUIMath.ConvertToPixels(mSprite.outer, texture.width, texture.height, true));
+			Rect rect = NGUIMath.ConvertToPixels(mUVRect, KFUISourceSize.Width(this.texture), KFUISourceSize.Height(this.texture), true);
+			Rect rect2 = ((mAtlas.coordinates != UIAtlas.Coordinates.TexCoords) ? mSprite.outer : NGUIMath.ConvertToPixels(mSprite.outer, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture), true));
 			int xMin = Mathf.RoundToInt(rect2.xMin - rect.xMin);
 			int yMin = Mathf.RoundToInt(rect2.yMin - rect.yMin);
 			int xMax = Mathf.RoundToInt(rect2.xMax - rect.xMin);

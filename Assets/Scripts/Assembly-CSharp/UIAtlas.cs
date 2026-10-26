@@ -162,13 +162,13 @@ public class UIAtlas : MonoBehaviour
 					Sprite sprite = sprites[i];
 					if (mCoordinates == Coordinates.TexCoords)
 					{
-						sprite.outer = NGUIMath.ConvertToTexCoords(sprite.outer, mainTexture.width, mainTexture.height);
-						sprite.inner = NGUIMath.ConvertToTexCoords(sprite.inner, mainTexture.width, mainTexture.height);
+						sprite.outer = NGUIMath.ConvertToTexCoords(sprite.outer, KFUISourceSize.Width(mainTexture), KFUISourceSize.Height(mainTexture));
+						sprite.inner = NGUIMath.ConvertToTexCoords(sprite.inner, KFUISourceSize.Width(mainTexture), KFUISourceSize.Height(mainTexture));
 					}
 					else
 					{
-						sprite.outer = NGUIMath.ConvertToPixels(sprite.outer, mainTexture.width, mainTexture.height, true);
-						sprite.inner = NGUIMath.ConvertToPixels(sprite.inner, mainTexture.width, mainTexture.height, true);
+						sprite.outer = NGUIMath.ConvertToPixels(sprite.outer, KFUISourceSize.Width(mainTexture), KFUISourceSize.Height(mainTexture), true);
+						sprite.inner = NGUIMath.ConvertToPixels(sprite.inner, KFUISourceSize.Width(mainTexture), KFUISourceSize.Height(mainTexture), true);
 					}
 				}
 			}

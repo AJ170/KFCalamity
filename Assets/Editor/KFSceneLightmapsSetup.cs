@@ -14,7 +14,7 @@ using UnityEngine;
 // is converted to LightmapFar-N.exr holding that light as HDR and imported as a Lightmap, so Unity encodes it for the
 // platform and the built-in shaders decode it as they would a map baked in 2018. Then a KFSceneLightmaps object is
 // added to the scene holding the maps, every renderer's index and scale/offset and every light's Unity 4 lightmapping
-// mode, all read from the scene file as exported (Unity 2018 drops them on load and a saved scene no longer has them,
+// mode and the level's light probes (converted by KFLightProbesConvert), all read from the scene file as exported (Unity 2018 drops them on load and a saved scene no longer has them,
 // so they are read from the untouched rip, RipScenes; file IDs survive saving). Rerunning replaces it.
 //
 // Batch: -executeMethod KFSceneLightmapsSetup.Run          (every scene in the build settings with LightmapFar maps)
@@ -40,7 +40,9 @@ public static class KFSceneLightmapsSetup
 
 	private static readonly Regex LightmapList = new Regex(@"m_Lightmaps:\s*\n((?:\s*- m_Lightmap: \{[^}]*\}\s*\n\s*m_IndirectLightmap: \{[^}]*\}\s*\n)*)");
 
-	private static readonly Regex LightmapEntry = new Regex(@"- m_Lightmap: \{fileID: \d+, guid: ([0-9a-f]{32})");
+	private static readonly Regex LightProbesField = new Regex(@"m_LightProbes: \{fileID: \d+, guid: ([0-9a-f]{32})");
+
+	private static readonly Regex LightmapEntry =new Regex(@"- m_Lightmap: \{fileID: \d+, guid: ([0-9a-f]{32})");
 
 	private static readonly PropertyInfo InspectorMode = typeof(SerializedObject).GetProperty("inspectorMode", BindingFlags.NonPublic | BindingFlags.Instance);
 
@@ -107,6 +109,13 @@ public static class KFSceneLightmapsSetup
 				}
 			}
 		}
+		// (before opening the scene: the conversion bakes in a scene of its own)
+		LightProbes probes = null;
+		Match probesField = LightProbesField.Match(text);
+		if (probesField.Success && !string.IsNullOrEmpty(AssetDatabase.GUIDToAssetPath(probesField.Groups[1].Value)))
+		{
+			probes = KFLightProbesConvert.Convert(AssetDatabase.GUIDToAssetPath(probesField.Groups[1].Value));
+		}
 		EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
 		GameObject old = GameObject.Find(ObjectName);
 		if (old != null)
@@ -145,9 +154,10 @@ public static class KFSceneLightmapsSetup
 		component.m_lights = foundLights.ToArray();
 		component.m_lightModes = modes.ToArray();
 		component.m_staticBatch = StaticBatchCandidates(found);
+		component.m_lightProbes = probes;
 		Lightmapping.lightingDataAsset = null;
 		EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
-		Debug.Log(string.Format("[KFLightmaps] {0}: {1} lightmaps, {2} of {3} lightmapped renderers, {4} of {5} lights, {6} static batched", scenePath, lightmaps.Count, found.Count, rendererData.Count, foundLights.Count, lights.Count, component.m_staticBatch.Length));
+		Debug.Log(string.Format("[KFLightmaps] {0}: {1} lightmaps, {2} of {3} lightmapped renderers, {4} of {5} lights, {6} static batched, {7} light probes", scenePath, lightmaps.Count, found.Count, rendererData.Count, foundLights.Count, lights.Count, component.m_staticBatch.Length, probes != null ? probes.count : 0));
 	}
 
 	// Lightmapped scenery that never moves: active mesh renderers with no Animation, Animator, Rigidbody, Joint or script

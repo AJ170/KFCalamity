@@ -116,11 +116,11 @@ public class BMSymbol
 					Rect rect = (mUV = mSprite.outer);
 					if (atlas.coordinates == UIAtlas.Coordinates.Pixels)
 					{
-						mUV = NGUIMath.ConvertToTexCoords(mUV, texture.width, texture.height);
+						mUV = NGUIMath.ConvertToTexCoords(mUV, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture));
 					}
 					else
 					{
-						rect = NGUIMath.ConvertToPixels(rect, texture.width, texture.height, true);
+						rect = NGUIMath.ConvertToPixels(rect, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture), true);
 					}
 					mOffsetX = Mathf.RoundToInt(mSprite.paddingLeft * rect.width);
 					mOffsetY = Mathf.RoundToInt(mSprite.paddingTop * rect.width);

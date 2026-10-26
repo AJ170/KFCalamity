@@ -12,6 +12,9 @@ using UnityEngine;
 // nothing in real time. Without bake data Unity 2018 would light every lightmapped wall again in real time with every
 // one of the level's lights (hundreds), twice as bright and an extra pass per light on the PS Vita.
 //
+// The level's Unity 4 light probes (converted by KFLightProbesConvert) are assigned too: players, zeds, NPCs and pickups
+// were lit by them, and without them they get only the dark flat ambient.
+//
 // The level's static scenery (m_staticBatch, chosen by the setup: lightmapped, not animated, scripted or referenced by a
 // script) is then static batched. The Android build had no static batching (thousands of draw calls a level); it is
 // done here, after the lightmaps are applied, because batching bakes each renderer's lightmap scale/offset into the
@@ -39,6 +42,8 @@ public class KFSceneLightmaps : MonoBehaviour
 
 	public GameObject[] m_staticBatch;
 
+	public LightProbes m_lightProbes;
+
 	private void Awake()
 	{
 		Apply();
@@ -53,6 +58,10 @@ public class KFSceneLightmaps : MonoBehaviour
 		}
 		LightmapSettings.lightmapsMode = LightmapsMode.NonDirectional;
 		LightmapSettings.lightmaps = data;
+		if (m_lightProbes != null)
+		{
+			LightmapSettings.lightProbes = m_lightProbes;
+		}
 		for (int i = 0; i < m_renderers.Length; i++)
 		{
 			if (m_renderers[i] != null)

@@ -175,8 +175,8 @@ public class UITexture : UIWidget
 		if (texture != null)
 		{
 			Vector3 localScale = base.cachedTransform.localScale;
-			localScale.x = (float)texture.width * uvRect.width;
-			localScale.y = (float)texture.height * uvRect.height;
+			localScale.x = (float)KFUISourceSize.Width(texture) * uvRect.width;
+			localScale.y = (float)KFUISourceSize.Height(texture) * uvRect.height;
 			localScale.z = 1f;
 			base.cachedTransform.localScale = localScale;
 		}

@@ -1721,51 +1721,80 @@ namespace Calamity.Input
 				result = GetWrappedDualAxis(5, true, inputType, playerID, GetThreshold(controllerType));
 				break;
 			case InputKey.O:
-				result = GetWrappedKey(0, inputType, playerID);
+				result = GetWrappedVitaKey(0, inputType, playerID);
 				break;
 			case InputKey.A:
-				result = GetWrappedKey(1, inputType, playerID);
+				result = GetWrappedVitaKey(1, inputType, playerID);
 				break;
 			case InputKey.U:
-				result = GetWrappedKey(2, inputType, playerID);
+				result = GetWrappedVitaKey(2, inputType, playerID);
 				break;
 			case InputKey.Y:
-				result = GetWrappedKey(3, inputType, playerID);
+				result = GetWrappedVitaKey(3, inputType, playerID);
 				break;
 			case InputKey.LT:
 			case InputKey.LB:
-				result = GetWrappedKey(4, inputType, playerID);
+				result = GetWrappedVitaKey(4, inputType, playerID);
 				break;
 			case InputKey.RT:
 			case InputKey.RB:
-				result = GetWrappedKey(5, inputType, playerID);
+				result = GetWrappedVitaKey(5, inputType, playerID);
 				break;
 			case InputKey.Start:
-				result = GetWrappedKey(7, inputType, playerID);
+				result = GetWrappedVitaKey(7, inputType, playerID);
 				break;
 			case InputKey.Dpad_Up:
-				result = GetWrappedKey(8, inputType, playerID);
+				result = GetWrappedVitaKey(8, inputType, playerID);
 				break;
 			case InputKey.Dpad_Right:
-				result = GetWrappedKey(9, inputType, playerID);
+				result = GetWrappedVitaKey(9, inputType, playerID);
 				break;
 			case InputKey.Dpad_Down:
-				result = GetWrappedKey(10, inputType, playerID);
+				result = GetWrappedVitaKey(10, inputType, playerID);
 				break;
 			case InputKey.Dpad_Left:
-				result = GetWrappedKey(11, inputType, playerID);
+				result = GetWrappedVitaKey(11, inputType, playerID);
 				break;
 			case InputKey.Dpad_Horizontal:
-				result = GetWrappedKeyAxis(11, 9, inputType, playerID);
+				result = GetWrappedVitaKeyAxis(11, 9, inputType, playerID);
 				break;
 			case InputKey.Dpad_Vertical:
-				result = GetWrappedKeyAxis(10, 8, inputType, playerID);
+				result = GetWrappedVitaKeyAxis(10, 8, inputType, playerID);
 				break;
 			case InputKey.RearTouchCenter:
 				result = new VitaRearTouchWrapper(inputType);
 				break;
 			}
 			return result;
+		}
+
+		// In the editor (build target PS Vita) the Vita layout reads joystick buttons only: keyboard stand-ins so the game can
+		// be played without a pad. Vita button -> key: cross Return, circle Backspace, square R, triangle G, L right mouse,
+		// R left mouse, select Tab, start Escape, D-pad the arrow keys.
+		private static readonly KeyCode[] VitaEditorKeys =
+		{
+			KeyCode.Return, KeyCode.Backspace, KeyCode.R, KeyCode.G, KeyCode.Mouse1, KeyCode.Mouse0, KeyCode.Tab, KeyCode.Escape,
+			KeyCode.UpArrow, KeyCode.RightArrow, KeyCode.DownArrow, KeyCode.LeftArrow
+		};
+
+		private static InputWrapper GetWrappedVitaKey(int keyID, InputActionType inputType, InputPlayer playerID)
+		{
+			InputWrapper pad = GetWrappedKey(keyID, inputType, playerID);
+			if (!Application.isEditor)
+			{
+				return pad;
+			}
+			return new MultipleInputsWrapper(pad, GetWrappedKey(VitaEditorKeys[keyID], inputType));
+		}
+
+		private static InputWrapper GetWrappedVitaKeyAxis(int keyAID, int keyBID, InputActionType inputType, InputPlayer playerID)
+		{
+			InputWrapper pad = GetWrappedKeyAxis(keyAID, keyBID, inputType, playerID);
+			if (!Application.isEditor)
+			{
+				return pad;
+			}
+			return new MultipleInputsWrapper(pad, GetWrappedKeyAxis(VitaEditorKeys[keyAID], VitaEditorKeys[keyBID], inputType));
 		}
 
 		private static InputWrapper WrapDefaultInput(InputKey key, ControllerType controllerType, InputActionType inputType, InputPlayer playerID)

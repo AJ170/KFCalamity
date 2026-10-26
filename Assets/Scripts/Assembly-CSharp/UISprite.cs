@@ -281,8 +281,8 @@ public class UISprite : UIWidget
 				Texture texture = mainTexture;
 				if (atlas.coordinates == UIAtlas.Coordinates.TexCoords && texture != null)
 				{
-					rect = NGUIMath.ConvertToPixels(rect, texture.width, texture.height, true);
-					rect2 = NGUIMath.ConvertToPixels(rect2, texture.width, texture.height, true);
+					rect = NGUIMath.ConvertToPixels(rect, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture), true);
+					rect2 = NGUIMath.ConvertToPixels(rect2, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture), true);
 				}
 				return new Vector4(rect2.xMin - rect.xMin, rect2.yMin - rect.yMin, rect.xMax - rect2.xMax, rect.yMax - rect2.yMax) * atlas.pixelSize;
 			}
@@ -375,8 +375,8 @@ public class UISprite : UIWidget
 			mOuterUV = mOuter;
 			if (atlas.coordinates == UIAtlas.Coordinates.Pixels)
 			{
-				mOuterUV = NGUIMath.ConvertToTexCoords(mOuterUV, texture.width, texture.height);
-				mInnerUV = NGUIMath.ConvertToTexCoords(mInnerUV, texture.width, texture.height);
+				mOuterUV = NGUIMath.ConvertToTexCoords(mOuterUV, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture));
+				mInnerUV = NGUIMath.ConvertToTexCoords(mInnerUV, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture));
 			}
 		}
 	}
@@ -423,7 +423,7 @@ public class UISprite : UIWidget
 		Vector3 localScale3 = base.cachedTransform.localScale;
 		if (texture != null)
 		{
-			Rect rect = NGUIMath.ConvertToPixels(outerUV, texture.width, texture.height, true);
+			Rect rect = NGUIMath.ConvertToPixels(outerUV, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture), true);
 			float pixelSize = atlas.pixelSize;
 			localScale3.x = (float)Mathf.RoundToInt(rect.width * pixelSize) * Mathf.Sign(localScale3.x);
 			localScale3.y = (float)Mathf.RoundToInt(rect.height * pixelSize) * Mathf.Sign(localScale3.y);
@@ -533,7 +533,7 @@ public class UISprite : UIWidget
 			Vector3 localScale = base.cachedTransform.localScale;
 			localScale.x = Mathf.Max(0f, localScale.x);
 			localScale.y = Mathf.Max(0f, localScale.y);
-			Vector2 vector = new Vector2(localScale.x / (float)texture.width, localScale.y / (float)texture.height);
+			Vector2 vector = new Vector2(localScale.x / (float)KFUISourceSize.Width(texture), localScale.y / (float)KFUISourceSize.Height(texture));
 			Vector2 vector2 = new Vector2(num / vector.x, num3 / vector.y);
 			Vector2 vector3 = new Vector2(num2 / vector.x, num4 / vector.y);
 			Pivot pivot = base.pivot;
@@ -922,7 +922,7 @@ public class UISprite : UIWidget
 		Rect rect = mInner;
 		if (atlas.coordinates == UIAtlas.Coordinates.TexCoords)
 		{
-			rect = NGUIMath.ConvertToPixels(rect, texture.width, texture.height, true);
+			rect = NGUIMath.ConvertToPixels(rect, KFUISourceSize.Width(texture), KFUISourceSize.Height(texture), true);
 		}
 		Vector2 vector = base.cachedTransform.localScale;
 		float pixelSize = atlas.pixelSize;
@@ -934,8 +934,8 @@ public class UISprite : UIWidget
 			num = 0.01f;
 			num2 = 0.01f;
 		}
-		Vector2 vector2 = new Vector2(rect.xMin / (float)texture.width, rect.yMin / (float)texture.height);
-		Vector2 vector3 = new Vector2(rect.xMax / (float)texture.width, rect.yMax / (float)texture.height);
+		Vector2 vector2 = new Vector2(rect.xMin / (float)KFUISourceSize.Width(texture), rect.yMin / (float)KFUISourceSize.Height(texture));
+		Vector2 vector3 = new Vector2(rect.xMax / (float)KFUISourceSize.Width(texture), rect.yMax / (float)KFUISourceSize.Height(texture));
 		Vector2 vector4 = vector3;
 		Color color = base.color;
 		color.a *= mPanel.alpha;
